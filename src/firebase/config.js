@@ -1,6 +1,6 @@
 // Import the functions you need from the SDKs you need
 import { getApps, initializeApp } from "firebase/app";
-import { getAuth, GoogleAuthProvider, signInWithPopup, signOut } from 'firebase/auth'
+import { getAuth } from 'firebase/auth'
 import { getAnalytics } from 'firebase/analytics'
 import { getPerformance } from 'firebase/performance'
 

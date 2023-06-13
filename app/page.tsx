@@ -1,8 +1,6 @@
-
 'use client';
 import initFirebase from '../src/firebase/config'
 import LoginWithGoogle from '@/src/firebase/loginWithGoogle';
-
 
 export default function Home(props: any) {
   initFirebase()

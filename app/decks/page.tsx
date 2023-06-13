@@ -1,39 +1,14 @@
 'use client'
 
-import { getAuth, signOut } from 'firebase/auth'
-import React, { useEffect } from 'react'
-import { useRouter } from 'next/navigation'
-
+import useFirebaseAuth from '@/src/firebase/useFirebaseAuth'
 
 function Page() {
-    const auth = getAuth()
-    const router = useRouter()
-    const authStateChangeHandler = (authState: any) => {
-        if (!authState) {
-            router.push("/")
-        }
-    }
-    const handleLogout = () => {
-        signOut(auth)
-            .then(res => {
-                // clear cookies
-                // update databaseZ
-            })
-    }
-
-    useEffect(() => {
-        const unsubscribe = auth.onAuthStateChanged(authStateChangeHandler)
-
-        return () => {
-            unsubscribe()
-        }
-    }, [])
-
+    const {user, loading, logOut } = useFirebaseAuth()
 
     return (
         <>
-            <div>Page</div>
-            <button onClick={handleLogout}>Logout</button>
+        <h1>deck</h1>
+        <button onClick={logOut}>logout</button>
         </>
     )
 }
