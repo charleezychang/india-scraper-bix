@@ -1,0 +1,1357 @@
+[
+    {
+        "topic": "Chemical Engineering Basics",
+        "question": "Direct conversion of thermal energy to electrical energy is facilitated by the",
+        "options": {
+            "a": "fuel cells.",
+            "b": "photo voltaic cell.",
+            "c": "magneto hydrodynamic generator.",
+            "d": "none of these."
+        },
+        "answer": "c"
+    },
+    {
+        "topic": "Chemical Engineering Basics",
+        "question": "The minimum carbon content in steel should be __________ percent for it to respond to a hardening treatment.",
+        "options": {
+            "a": "0.2",
+            "b": "0.4",
+            "c": "0.6",
+            "d": "0.8"
+        },
+        "answer": "a"
+    },
+    {
+        "topic": "Chemical Engineering Basics",
+        "question": "Angular displacement can be measured suitably by a",
+        "options": {
+            "a": "shaft encoder.",
+            "b": "linear variable differential transducer (LVDT).",
+            "c": "stroboscope.",
+            "d": "tachometer."
+        },
+        "answer": "a"
+    },
+    {
+        "topic": "Chemical Engineering Basics",
+        "question": "Minimum temperature upto which water can be theoretically cooled down in the cooling tower by evaporative cooling is equal to the __________ temperature of air.",
+        "options": {
+            "a": "wet bulb",
+            "b": "dry bulb",
+            "c": "saturation",
+            "d": "dew point"
+        },
+        "answer": "a"
+    },
+    {
+        "topic": "Chemical Engineering Basics",
+        "question": "Heat transfer to the water wall in a high pressure water wall type boiler furnace is mainly by",
+        "options": {
+            "a": "conduction",
+            "b": "convection",
+            "c": "both 'a' & 'b'",
+            "d": "radiation"
+        },
+        "answer": "d"
+    },
+    {
+        "topic": "Chemical Engineering Basics",
+        "question": "Device used as a standard for the calibration of pressure gauges is a",
+        "options": {
+            "a": "bellow",
+            "b": "diaphragm",
+            "c": "dead weight pressure tester",
+            "d": "mercury manometer"
+        },
+        "answer": "c"
+    },
+    {
+        "topic": "Chemical Engineering Basics",
+        "question": "X-rays are",
+        "options": {
+            "a": "positively charged.",
+            "b": "negatively charged.",
+            "c": "neutral.",
+            "d": "of higher wavelength than visible light."
+        },
+        "answer": "c"
+    },
+    {
+        "topic": "Chemical Engineering Basics",
+        "question": "Diffusion co-efficient of a metal in a solid solution depends upon its",
+        "options": {
+            "a": "composition",
+            "b": "temperature",
+            "c": "both (a) & (b)",
+            "d": "neither (a) nor (b)"
+        },
+        "answer": "c"
+    },
+    {
+        "topic": "Chemical Engineering Basics",
+        "question": "Cast iron contains __________ percent carbon.",
+        "options": {
+            "a": "2.5",
+            "b": "3.75",
+            "c": "4.75",
+            "d": "5.25"
+        },
+        "answer": "a"
+    },
+    {
+        "topic": "Chemical Engineering Basics",
+        "question": "Alloys having more than 80% copper are generally more",
+        "options": {
+            "a": "abrasion resistant.",
+            "b": "corrosion resistant.",
+            "c": "prone to season cracking.",
+            "d": "machinable."
+        },
+        "answer": "b"
+    },
+    {
+        "topic": "Chemical Engineering Basics",
+        "question": "Factor of safety in machine design is defined as the ratio of ultimate stress to __________ stress.",
+        "options": {
+            "a": "working",
+            "b": "bearing",
+            "c": "yield",
+            "d": "none of these"
+        },
+        "answer": "a"
+    },
+    {
+        "topic": "Chemical Engineering Basics",
+        "question": "Out of the following, the __________ pipe has the least corrosion resistance.",
+        "options": {
+            "a": "mild steel",
+            "b": "copper",
+            "c": "cast iron",
+            "d": "wrought iron"
+        },
+        "answer": "d"
+    },
+    {
+        "topic": "Chemical Engineering Basics",
+        "question": "With increase in steam pressure, its specific volume decreases",
+        "options": {
+            "a": "rapidly first and then slowly.",
+            "b": "linearly.",
+            "c": "slowly first and then rapidly.",
+            "d": "exponentially."
+        },
+        "answer": "a"
+    },
+    {
+        "topic": "Chemical Engineering Basics",
+        "question": "Which of the following rays has the least wavelength?",
+        "options": {
+            "a": "Ultraviolet rays",
+            "b": "Infrared rays",
+            "c": "Cosmic rays",
+            "d": "X-rays"
+        },
+        "answer": "c"
+    },
+    {
+        "topic": "Chemical Engineering Basics",
+        "question": "Hydrocyclone is a",
+        "options": {
+            "a": "crusher",
+            "b": "wet classifier",
+            "c": "dry classifier",
+            "d": "magnetic separator"
+        },
+        "answer": "b"
+    },
+    {
+        "topic": "Chemical Engineering Basics",
+        "question": "Ammonia leakage in the refrigeration system is detected by",
+        "options": {
+            "a": "sulphur stick, which on detection gives white smoke.",
+            "b": "using chemical reagents.",
+            "c": "its smell.",
+            "d": "soap solution."
+        },
+        "answer": "a"
+    },
+    {
+        "topic": "Chemical Engineering Basics",
+        "question": "Fibre glass is a composite material of",
+        "options": {
+            "a": "glass fibre in a polymer matrix.",
+            "b": "glass fibre in a metallic matrix.",
+            "c": "polymer fibre in a glassy matrix.",
+            "d": "both 'b' & 'c'."
+        },
+        "answer": "a"
+    },
+    {
+        "topic": "Chemical Engineering Basics",
+        "question": "According to thermodynamic Farenhite scale, the fundamental interval between ice point to steam point is",
+        "options": {
+            "a": "180°",
+            "b": "212°",
+            "c": "32°",
+            "d": "273°"
+        },
+        "answer": "a"
+    },
+    {
+        "topic": "Chemical Engineering Basics",
+        "question": "Maximum consumption of limestone is in the __________ industry.",
+        "options": {
+            "a": "iron and steel",
+            "b": "cement",
+            "c": "glass",
+            "d": "fertiliser"
+        },
+        "answer": "d"
+    },
+    {
+        "topic": "Chemical Engineering Basics",
+        "question": "Austenite is not",
+        "options": {
+            "a": "ductile",
+            "b": "malleable",
+            "c": "magnetic",
+            "d": "soft"
+        },
+        "answer": "c"
+    },
+    {
+        "topic": "Chemical Engineering Basics",
+        "question": "Wood is a/an __________ material.",
+        "options": {
+            "a": "amorphous",
+            "b": "cellular",
+            "c": "homogeneous",
+            "d": "grannular"
+        },
+        "answer": "b"
+    },
+    {
+        "topic": "Chemical Engineering Basics",
+        "question": "Pick out the wrong statement.",
+        "options": {
+            "a": "Both annealing and normalising release the internal stresses of the material besides improving the mechanical properties.",
+            "b": "Low carbon steel does not respond to the heat treatment for hardening of the material, hence it is subjected to case hardening or surface hardening processes like cyniding, carburising, nitriding etc., which produces high carbon outer layers resulting in increase of surface hardness.",
+            "c": "Induction hardening and flame hardening techniques are also used for surface hardening.",
+            "d": "Martempering of a material is a hardening process."
+        },
+        "answer": "c"
+    },
+    {
+        "topic": "Chemical Engineering Basics",
+        "question": "Use of flux during soldering is done to",
+        "options": {
+            "a": "increase flidity of solder by lowering its melting temperature.",
+            "b": "prevent oxide formation.",
+            "c": "wash away surplus solder.",
+            "d": "full up the joint gap."
+        },
+        "answer": "b"
+    },
+    {
+        "topic": "Chemical Engineering Basics",
+        "question": "The most important consideration in value engineering is the",
+        "options": {
+            "a": "profit maximisation.",
+            "b": "customer satisfaction.",
+            "c": "cost reduction.",
+            "d": "process improvement."
+        },
+        "answer": "b"
+    },
+    {
+        "topic": "Chemical Engineering Basics",
+        "question": "Resilience of a bolt can be increased by increasing its",
+        "options": {
+            "a": "length",
+            "b": "shank diameter",
+            "c": "head diameter",
+            "d": "none of these"
+        },
+        "answer": "a"
+    },
+    {
+        "topic": "Chemical Engineering Basics",
+        "question": "In TIG welding, thoriated tungsten electrodes are used, because it",
+        "options": {
+            "a": "has higher current carraying capacity.",
+            "b": "has better electron emissivity.",
+            "c": "is stronger than ordinary tungsten.",
+            "d": "is easy to prepare."
+        },
+        "answer": "b"
+    },
+    {
+        "topic": "Chemical Engineering Basics",
+        "question": "Vernier calipers can not be used to measure the",
+        "options": {
+            "a": "I.D. & O.D. of the shaft.",
+            "b": "thickness of parts.",
+            "c": "depth of holes.",
+            "d": "clearance between two mating surfaces."
+        },
+        "answer": "d"
+    },
+    {
+        "topic": "Chemical Engineering Basics",
+        "question": "Which of the following is not the commercial name of polymethyl-methacrylate (PMMA) ?",
+        "options": {
+            "a": "Styrofoam",
+            "b": "Lucite",
+            "c": "Perspex",
+            "d": "Plexiglass"
+        },
+        "answer": "a"
+    },
+    {
+        "topic": "Chemical Engineering Basics",
+        "question": "On    being hit with a hammer, __________ will readily fracture.",
+        "options": {
+            "a": "brass",
+            "b": "mild steel",
+            "c": "cast iron",
+            "d": "lead"
+        },
+        "answer": "c"
+    },
+    {
+        "topic": "Chemical Engineering Basics",
+        "question": "Which of the following does not discharge the dust collected as a dry solid ?",
+        "options": {
+            "a": "Electrostatic precipitator",
+            "b": "Wet scrubber",
+            "c": "Bag filter",
+            "d": "Gravity settling chamber"
+        },
+        "answer": "b"
+    },
+    {
+        "topic": "Chemical Engineering Basics",
+        "question": "Milk is fat dispersed in water. It is an example of",
+        "options": {
+            "a": "suspension",
+            "b": "emulsion",
+            "c": "gel",
+            "d": "solution"
+        },
+        "answer": "b"
+    },
+    {
+        "topic": "Chemical Engineering Basics",
+        "question": "__________ is the most suitable lubricant for drawing mild steel wires?",
+        "options": {
+            "a": "Kerosene",
+            "b": "Water",
+            "c": "Sodium stearate",
+            "d": "Lime water"
+        },
+        "answer": "c"
+    },
+    {
+        "topic": "Chemical Engineering Basics",
+        "question": "Reduction in the grain size reduces the __________ of the material.",
+        "options": {
+            "a": "fatigue resistance",
+            "b": "tensile strength",
+            "c": "creep resistance",
+            "d": "all (a), (b) & (c)"
+        },
+        "answer": "d"
+    },
+    {
+        "topic": "Chemical Engineering Basics",
+        "question": "Absolute zero, pressure will occur, when the molecular momentum of the system becomes zero. A liquid will cease to exist as liquid at",
+        "options": {
+            "a": "high vacuum",
+            "b": "zero pressure",
+            "c": "0°K",
+            "d": "earth's centre"
+        },
+        "answer": "b"
+    },
+    {
+        "topic": "Chemical Engineering Basics",
+        "question": "In case of simple harmonic motion, displacement is proportional to the",
+        "options": {
+            "a": "velocity",
+            "b": "acceleration",
+            "c": "both (a) & (b)",
+            "d": "neither (a) nor (b)"
+        },
+        "answer": "b"
+    },
+    {
+        "topic": "Chemical Engineering Basics",
+        "question": "Theoretical volume of oxygen required for complete combustion of 1Nm3  of acetylene, in oxy-acetylene welding is __________ Nm3 .",
+        "options": {
+            "a": "0.5",
+            "b": "1",
+            "c": "2",
+            "d": "2.5"
+        },
+        "answer": "d"
+    },
+    {
+        "topic": "Chemical Engineering Basics",
+        "question": "Out of the following, the joint produced by __________ has the lowest strength.",
+        "options": {
+            "a": "soldering",
+            "b": "welding",
+            "c": "brazing",
+            "d": "rivetting"
+        },
+        "answer": "a"
+    },
+    {
+        "topic": "Chemical Engineering Basics",
+        "question": "Dies for wire drawing are generally made of",
+        "options": {
+            "a": "mild steel",
+            "b": "stainless steel",
+            "c": "carbides",
+            "d": "high carbon steel"
+        },
+        "answer": "a"
+    },
+    {
+        "topic": "Chemical Engineering Basics",
+        "question": "The starting of a car takes time in winter, because the",
+        "options": {
+            "a": "octane number of fuel is decreased.",
+            "b": "fuel supply for ignition is not sufficient.",
+            "c": "vaporisation of the fuel is decreased.",
+            "d": "pour point of fuel decreases."
+        },
+        "answer": "c"
+    },
+    {
+        "topic": "Chemical Engineering Basics",
+        "question": "The elastic strain in copper is due to the",
+        "options": {
+            "a": "motion of dislocations.",
+            "b": "stretching of atomic bonds.",
+            "c": "breakage of atomic bonds.",
+            "d": "none of the above."
+        },
+        "answer": "a"
+    },
+    {
+        "topic": "Chemical Engineering Basics",
+        "question": "Other parameters remaining same, the recrystallisation temperature of an alloy is lowered, when",
+        "options": {
+            "a": "strain rate is increased.",
+            "b": "grain size is increased.",
+            "c": "prior cold deformation is increased.",
+            "d": "not affected by any of the above parameters."
+        },
+        "answer": "a"
+    },
+    {
+        "topic": "Chemical Engineering Basics",
+        "question": "__________ are normally subjected to sub-zero treatment.",
+        "options": {
+            "a": "Highly stressed parts",
+            "b": "Gauges or precision parts",
+            "c": "Cold rolled sheets",
+            "d": "Non machinable materials"
+        },
+        "answer": "b"
+    },
+    {
+        "topic": "Chemical Engineering Basics",
+        "question": "Induced draft fans provided in large thermal power plant boilers have __________ blades.",
+        "options": {
+            "a": "forward curved",
+            "b": "backward curved",
+            "c": "double curved",
+            "d": "radial or straight"
+        },
+        "answer": "b"
+    },
+    {
+        "topic": "Chemical Engineering Basics",
+        "question": "Which of the following has the highest value of refractive index ?",
+        "options": {
+            "a": "Brine (sea water)",
+            "b": "Diamond",
+            "c": "Distilled water",
+            "d": "Glass"
+        },
+        "answer": "b"
+    },
+    {
+        "topic": "Chemical Engineering Basics",
+        "question": "Use of economiser in a boiler plant reduces the fuel consumption for steam generation by about __________ percent.",
+        "options": {
+            "a": "1",
+            "b": "10",
+            "c": "30",
+            "d": "45"
+        },
+        "answer": "b"
+    },
+    {
+        "topic": "Chemical Engineering Basics",
+        "question": "Stainless steel is welded with difficulty because of",
+        "options": {
+            "a": "its high melting temperature.",
+            "b": "chances of cracking.",
+            "c": "oxide film formation.",
+            "d": "chromium carbide formation."
+        },
+        "answer": "c"
+    },
+    {
+        "topic": "Chemical Engineering Basics",
+        "question": "For preparation of porous bearings by powder metallurgy, preferred particle shape is",
+        "options": {
+            "a": "spherical",
+            "b": "nodular",
+            "c": "irregular",
+            "d": "no preferred shape"
+        },
+        "answer": "a"
+    },
+    {
+        "topic": "Chemical Engineering Basics",
+        "question": "The maximum thickness of the metal which can be welded using ultrasonic welding is __________ mm.",
+        "options": {
+            "a": "0.5",
+            "b": "3",
+            "c": "10",
+            "d": "25"
+        },
+        "answer": "b"
+    },
+    {
+        "topic": "Chemical Engineering Basics",
+        "question": "High speed steel tools retain their hardness upto a temperature of __________ °C.",
+        "options": {
+            "a": "500",
+            "b": "750",
+            "c": "900",
+            "d": "1100"
+        },
+        "answer": "c"
+    },
+    {
+        "topic": "Chemical Engineering Basics",
+        "question": "Wrought iron does not have",
+        "options": {
+            "a": "uniform strength in all directions.",
+            "b": "ability to hold protective coating.",
+            "c": "high ductility & corrosion resistance.",
+            "d": "easily weldable characteristics."
+        },
+        "answer": "a"
+    },
+    {
+        "topic": "Chemical Engineering Basics",
+        "question": "Midrex process of sponge iron production uses reformed natural gas as the reducing agent, which uses iron ore in the form of",
+        "options": {
+            "a": "lumps",
+            "b": "pellets",
+            "c": "briquettes",
+            "d": "sinter"
+        },
+        "answer": "b"
+    },
+    {
+        "topic": "Chemical Engineering Basics",
+        "question": "Corrosion is",
+        "options": {
+            "a": "a physical phenomenon.",
+            "b": "a chemical phenomenon.",
+            "c": "same as erosion.",
+            "d": "an uncontrollable phenomenon."
+        },
+        "answer": "b"
+    },
+    {
+        "topic": "Chemical Engineering Basics",
+        "question": "Which of the following is not an ore of copper?",
+        "options": {
+            "a": "Cryolite",
+            "b": "Azurite",
+            "c": "Chalcopyrite",
+            "d": "Malachite"
+        },
+        "answer": "a"
+    },
+    {
+        "topic": "Chemical Engineering Basics",
+        "question": "Difference at any instant between the value of the controlled variable and the set point is called the",
+        "options": {
+            "a": "deviation",
+            "b": "derivative time",
+            "c": "error ratio",
+            "d": "differential gap"
+        },
+        "answer": "a"
+    },
+    {
+        "topic": "Chemical Engineering Basics",
+        "question": "The expected efficiency of a single rivetted lap joint is of the order of 50%. If the thickness of the plate is increased four times, then the rivet diameter will have to be increased __________ times.",
+        "options": {
+            "a": "two",
+            "b": "four",
+            "c": "six",
+            "d": "eight"
+        },
+        "answer": "a"
+    },
+    {
+        "topic": "Chemical Engineering Basics",
+        "question": "Nickel and __________ are the alloying element added in steel to increase its toughness.",
+        "options": {
+            "a": "molybdenum",
+            "b": "chromium",
+            "c": "vanadium",
+            "d": "silicon"
+        },
+        "answer": "d"
+    },
+    {
+        "topic": "Chemical Engineering Basics",
+        "question": "Which of the following equipments is used for liquid dispersion ?",
+        "options": {
+            "a": "Packed column",
+            "b": "Venturi scrubber",
+            "c": "Bubble cap plate column",
+            "d": "Wetted wall column"
+        },
+        "answer": "b"
+    },
+    {
+        "topic": "Chemical Engineering Basics",
+        "question": "Eutectoid composition of carbon steel at room temperature is",
+        "options": {
+            "a": "cementite",
+            "b": "pearlite",
+            "c": "martensite",
+            "d": "ferrite"
+        },
+        "answer": "b"
+    },
+    {
+        "topic": "Chemical Engineering Basics",
+        "question": "Maximum permissible sulphur content in steel is __________ percent.",
+        "options": {
+            "a": "0.015",
+            "b": "0.055",
+            "c": "0.505",
+            "d": "0.805"
+        },
+        "answer": "a"
+    },
+    {
+        "topic": "Chemical Engineering Basics",
+        "question": "The dimensional formula of bulk modulus of elasticity is same as that of the",
+        "options": {
+            "a": "pressure",
+            "b": "density",
+            "c": "force",
+            "d": "none of these"
+        },
+        "answer": "a"
+    },
+    {
+        "topic": "Chemical Engineering Basics",
+        "question": "Ferromagnetic material owe their properties to __________ inner sub-shells.",
+        "options": {
+            "a": "completely filled",
+            "b": "partially filled",
+            "c": "equally filled",
+            "d": "vacant"
+        },
+        "answer": "b"
+    },
+    {
+        "topic": "Chemical Engineering Basics",
+        "question": "Which of the following metals is the most prone to work hardening?",
+        "options": {
+            "a": "Brass",
+            "b": "Aluminium",
+            "c": "Copper",
+            "d": "Lead"
+        },
+        "answer": "a"
+    },
+    {
+        "topic": "Chemical Engineering Basics",
+        "question": "'Amortization' in respect of financial obligation of a company means the",
+        "options": {
+            "a": "liquidation of financial obligations on instalment basis.",
+            "b": "commitment of financial obligation on priority.",
+            "c": "liquidation of all the obsolete equipments of the company.",
+            "d": "modernisation of the plant equipments."
+        },
+        "answer": "a"
+    },
+    {
+        "topic": "Chemical Engineering Basics",
+        "question": "Out of the following, which will fracture most readity, when hit with a hard hammer ?",
+        "options": {
+            "a": "Brass",
+            "b": "Bronze",
+            "c": "German silver",
+            "d": "Cast iron"
+        },
+        "answer": "d"
+    },
+    {
+        "topic": "Chemical Engineering Basics",
+        "question": "A pycnometer is used for the measurement of",
+        "options": {
+            "a": "flow rate of molten metal.",
+            "b": "specific gravity of a liquid.",
+            "c": "composition of alloys.",
+            "d": "concentration of a solution."
+        },
+        "answer": "b"
+    },
+    {
+        "topic": "Chemical Engineering Basics",
+        "question": "For infinite parallel planes having emis-sivities ε1 & ε2, the interchange factor for radiation from surface 1 to surface 2 is given by",
+        "options": {
+            "a": "(ε1 + ε2)/ε1.ε2",
+            "b": "ε1.ε2/(ε1 + ε2 - ε1.ε2)",
+            "c": "ε1.ε2",
+            "d": "ε1 + ε2"
+        },
+        "answer": "b"
+    },
+    {
+        "topic": "Chemical Engineering Basics",
+        "question": "Working of linear variable differential transducer (LVDT) is based on the principle of variable",
+        "options": {
+            "a": "capacitance",
+            "b": "resistance",
+            "c": "mutual inductance",
+            "d": "none of these"
+        },
+        "answer": "c"
+    },
+    {
+        "topic": "Chemical Engineering Basics",
+        "question": "A highly elastic material is deformed least on loading and retains its original form on removal of the load. Which of the following is the most elastic material?",
+        "options": {
+            "a": "Steel",
+            "b": "Glass",
+            "c": "Rubber",
+            "d": "Brass"
+        },
+        "answer": "a"
+    },
+    {
+        "topic": "Chemical Engineering Basics",
+        "question": "Addition of __________ to steel does not impart hardness.",
+        "options": {
+            "a": "nickel",
+            "b": "copper",
+            "c": "chromium",
+            "d": "silicon"
+        },
+        "answer": "b"
+    },
+    {
+        "topic": "Chemical Engineering Basics",
+        "question": "For a spontaneous natural process at constant temperature and pressure, the free energy of the system always",
+        "options": {
+            "a": "increases.",
+            "b": "decreases.",
+            "c": "remains constant.",
+            "d": "increases to a maximum before decreasing."
+        },
+        "answer": "a"
+    },
+    {
+        "topic": "Chemical Engineering Basics",
+        "question": "Inertial forces are obtained, when the elastic forces are multiplied by __________ number.",
+        "options": {
+            "a": "Mach",
+            "b": "Froude",
+            "c": "Reynolds",
+            "d": "Euler"
+        },
+        "answer": "a"
+    },
+    {
+        "topic": "Chemical Engineering Basics",
+        "question": "Temperature of hot gases flowing in a pipe is measured by a thermocouple inserted in the thermal well. The thermal well made of __________ will facilitate the most accurate measurement of the temperature.",
+        "options": {
+            "a": "copper",
+            "b": "steel",
+            "c": "aluminium",
+            "d": "brass"
+        },
+        "answer": "a"
+    },
+    {
+        "topic": "Chemical Engineering Basics",
+        "question": "Wavelength of radiation emitted by a body depends on the __________ of its surface.",
+        "options": {
+            "a": "temperature",
+            "b": "area",
+            "c": "nature",
+            "d": "all   'a', 'b' & 'c'"
+        },
+        "answer": "a"
+    },
+    
+        {
+            "topic": "Chemical Engineering Basics",
+            "question": "The phenomenon occurring during explosion of a hydrogen bomb is",
+            "options": {
+                "a": "nuclear fission.",
+                "b": "nuclear fusion.",
+                "c": "a combination of both nuclear fission & fusion.",
+                "d": "none of these."
+            },
+            "answer": "c"
+        },
+        {
+            "topic": "Chemical Engineering Basics",
+            "question": "Square steel key is normally strong in failure by shear & crushing. Keys are normally made of __________ steel bars.",
+            "options": {
+                "a": "hot rolled mild",
+                "b": "cold rolled mild",
+                "c": "forged",
+                "d": "machinable stainless"
+            },
+            "answer": "b"
+        },
+        {
+            "topic": "Chemical Engineering Basics",
+            "question": "Nitriding of a steel part does not increase its",
+            "options": {
+                "a": "grain size.",
+                "b": "fatigue limit.",
+                "c": "surface hardness.",
+                "d": "wear resistance."
+            },
+            "answer": "a"
+        },
+        {
+            "topic": "Chemical Engineering Basics",
+            "question": "__________ of grey  cast iron produces white cast iron.",
+            "options": {
+                "a": "Tempering",
+                "b": "Rapid heating",
+                "c": "Rapid cooling",
+                "d": "Slow cooling"
+            },
+            "answer": "b"
+        },
+        {
+            "topic": "Chemical Engineering Basics",
+            "question": "As the fluid flow rate increases, the float of the rotameter",
+            "options": {
+                "a": "rises in the tube.",
+                "b": "rotates at higher speed.",
+                "c": "rotates at lower speed.",
+                "d": "drops down in the tube."
+            },
+            "answer": "a"
+        },
+        {
+            "topic": "Chemical Engineering Basics",
+            "question": "Maximum hardenability of steel depends upon its",
+            "options": {
+                "a": "chemical composition",
+                "b": "carbon content",
+                "c": "grain size",
+                "d": "alloying elements content"
+            },
+            "answer": "d"
+        },
+        {
+            "topic": "Chemical Engineering Basics",
+            "question": "Blast furnace slag is mainly molten",
+            "options": {
+                "a": "sand",
+                "b": "magnesium silicate",
+                "c": "calcium silicate",
+                "d": "iron pyrite"
+            },
+            "answer": "c"
+        },
+        {
+            "topic": "Chemical Engineering Basics",
+            "question": "A jet engine turbine blade is normally manufactured by",
+            "options": {
+                "a": "forging.",
+                "b": "shell moulding.",
+                "c": "investment casting.",
+                "d": "pressure die casting."
+            },
+            "answer": "c"
+        },
+        {
+            "topic": "Chemical Engineering Basics",
+            "question": "Stainless steel is welded using",
+            "options": {
+                "a": "oxy-acetylene flame.",
+                "b": "oxy-hydrogen flame.",
+                "c": "arc welding.",
+                "d": "inert gas arc welding."
+            },
+            "answer": "d"
+        },
+        {
+            "topic": "Chemical Engineering Basics",
+            "question": "The cooling rate required to freeze 1 ton of water at 0°C into ice at 0°C in 24 hours is __________ BTU/hr.",
+            "options": {
+                "a": "100",
+                "b": "200",
+                "c": "1000",
+                "d": "2000"
+            },
+            "answer": "b"
+        },
+        {
+            "topic": "Chemical Engineering Basics",
+            "question": "Which of the following is not a principal alloying element for the structural steel?",
+            "options": {
+                "a": "Molybednum",
+                "b": "Nickel",
+                "c": "Manganese",
+                "d": "Chromium"
+            },
+            "answer": "a"
+        },
+        {
+            "topic": "Chemical Engineering Basics",
+            "question": "Metalloids",
+            "options": {
+                "a": "are good conductor of heat & electricity.",
+                "b": "act as electron donors with metals & as electron acceptor with non-metals.",
+                "c": "are not necessarily solids at room temperature.",
+                "d": "are compounds that exhibit both metallic & non-metallic properties to some extent and are exemplified by elements like germanium, silicon & boron."
+            },
+            "answer": "d"
+        },
+        {
+            "topic": "Chemical Engineering Basics",
+            "question": "Pick out the wrong statement",
+            "options": {
+                "a": "Processing of themosetting plastics is ideally done by injection moulding.",
+                "b": "Processing of thermoplastics is ideally done by compression moulding.",
+                "c": "Mass production of seamless pipes are done by electrical resistance welding (ERW).",
+                "d": "Stretch forming is a process of cold drawing."
+            },
+            "answer": "c"
+        },
+        {
+            "topic": "Chemical Engineering Basics",
+            "question": "Lead is poured into the joints between two __________ pipes.",
+            "options": {
+                "a": "cast iron",
+                "b": "steel",
+                "c": "concrete",
+                "d": "plastic"
+            },
+            "answer": "a"
+        },
+        {
+            "topic": "Chemical Engineering Basics",
+            "question": "'Ice point' is designated on Farenhite temperature scale by",
+            "options": {
+                "a": "0°",
+                "b": "32°",
+                "c": "62°",
+                "d": "212°"
+            },
+            "answer": "b"
+        },
+        {
+            "topic": "Chemical Engineering Basics",
+            "question": "In __________ process, ions of salts react with water to produce acidity or alkalinity.",
+            "options": {
+                "a": "hydration",
+                "b": "hydrolysis",
+                "c": "electrolysis",
+                "d": "dialysis"
+            },
+            "answer": "b"
+        },
+        {
+            "topic": "Chemical Engineering Basics",
+            "question": "__________ is used for tying the steel coloumns to concrete foundation.",
+            "options": {
+                "a": "Grouting",
+                "b": "Eyebolt",
+                "c": "Anchor bolts",
+                "d": "Refractory castables"
+            },
+            "answer": "c"
+        },
+        {
+            "topic": "Chemical Engineering Basics",
+            "question": "Fatigue resistance of a material is measured by the",
+            "options": {
+                "a": "elastic limit.",
+                "b": "ultimate tensile strength.",
+                "c": "Young's modulus.",
+                "d": "endurance limit."
+            },
+            "answer": "d"
+        },
+        {
+            "topic": "Chemical Engineering Basics",
+            "question": "__________ is the trade name assigned to a non-ferrous cast alloy composed of cobalt, chromium & tungsten.",
+            "options": {
+                "a": "Stellite",
+                "b": "High speed steel",
+                "c": "Cermet",
+                "d": "Alnico"
+            },
+            "answer": "a"
+        },
+        {
+            "topic": "Chemical Engineering Basics",
+            "question": "A dense structure of grinding wheel is not used for the",
+            "options": {
+                "a": "ductile material.",
+                "b": "hard materials.",
+                "c": "brittle materials.",
+                "d": "finishing cuts."
+            },
+            "answer": "a"
+        },
+        {
+            "topic": "Chemical Engineering Basics",
+            "question": "The best guide to judge the general quality of water is the measurement of its",
+            "options": {
+                "a": "pH value.",
+                "b": "electrical conductivity.",
+                "c": "turbidity.",
+                "d": "dissolved oxygen content."
+            },
+            "answer": "b"
+        },
+        {
+            "topic": "Chemical Engineering Basics",
+            "question": "Wrought iron is not",
+            "options": {
+                "a": "ductile & resistant to corrosion/rusting.",
+                "b": "weldable easily.",
+                "c": "having uniform strength in all directions.",
+                "d": "having maximum tensile strength along the lines of slag distribution."
+            },
+            "answer": "c"
+        },
+        {
+            "topic": "Chemical Engineering Basics",
+            "question": "Which of the following is the largest quantum of pressure?",
+            "options": {
+                "a": "1 kg/cm2",
+                "b": "1 bar",
+                "c": "1 atmosphere",
+                "d": "1 kilo Pascal"
+            },
+            "answer": "c"
+        },
+        {
+            "topic": "Chemical Engineering Basics",
+            "question": "Which of the following is not a charge material for cupola ?",
+            "options": {
+                "a": "Limestone",
+                "b": "Iron scrap",
+                "c": "Iron ore",
+                "d": "Pig iron"
+            },
+            "answer": "c"
+        },
+        {
+            "topic": "Chemical Engineering Basics",
+            "question": "Which of the following is an undesirable property of slag produced during the pyrometallurgical method of metal extraction from its ore ?",
+            "options": {
+                "a": "High fusibility & fluidity.",
+                "b": "High thermal conductivity.",
+                "c": "Low density.",
+                "d": "High chemical activity."
+            },
+            "answer": "b"
+        },
+        {
+            "topic": "Chemical Engineering Basics",
+            "question": "Runga-Kutta method is used to solve a/an",
+            "options": {
+                "a": "ordinary differential equation of nth order.",
+                "b": "simultaneous non-linear equation.",
+                "c": "linear differential equation.",
+                "d": "none of these."
+            },
+            "answer": "b"
+        },
+        {
+            "topic": "Chemical Engineering Basics",
+            "question": "Recrystallisation temperature of steel is __________ °C.",
+            "options": {
+                "a": "50",
+                "b": "300",
+                "c": "500",
+                "d": "800"
+            },
+            "answer": "d"
+        },
+        {
+            "topic": "Chemical Engineering Basics",
+            "question": "Pressure required to increase the density of water by about 1% is __________ atmosphere.",
+            "options": {
+                "a": "10",
+                "b": "50",
+                "c": "200",
+                "d": "1000"
+            },
+            "answer": "c"
+        },
+        {
+            "topic": "Chemical Engineering Basics",
+            "question": "Elimination of brittleness resulting from welding of saw blades is done by __________ of the welded portion.",
+            "options": {
+                "a": "annealing",
+                "b": "toughening",
+                "c": "work hardening",
+                "d": "tempering"
+            },
+            "answer": "a"
+        },
+        {
+            "topic": "Chemical Engineering Basics",
+            "question": "The maximum stress below which a material can withstand an infinite number of cycle of stress, is termed as the",
+            "options": {
+                "a": "fatigue strength",
+                "b": "creep strength",
+                "c": "resilience",
+                "d": "endurance limit"
+            },
+            "answer": "d"
+        },
+        {
+            "topic": "Chemical Engineering Basics",
+            "question": "The difference in one unit of Rockwell hardness number corresponds to a difference in the depth of indentation of __________ mm.",
+            "options": {
+                "a": "0.001",
+                "b": "0.01",
+                "c": "0.002",
+                "d": "0.02"
+            },
+            "answer": "c"
+        },
+        {
+            "topic": "Chemical Engineering Basics",
+            "question": "Steel balls are manufactured by",
+            "options": {
+                "a": "sintering",
+                "b": "casting",
+                "c": "cold heading",
+                "d": "spinning"
+            },
+            "answer": "c"
+        },
+        {
+            "topic": "Chemical Engineering Basics",
+            "question": "__________ temperature remains constant during adiabatic saturation process of unsaturated air.",
+            "options": {
+                "a": "Dew point",
+                "b": "Dry bulb",
+                "c": "Wet bulb",
+                "d": "None of these"
+            },
+            "answer": "c"
+        },
+        {
+            "topic": "Chemical Engineering Basics",
+            "question": "The best lubricants for a machine working at high temperature & load is",
+            "options": {
+                "a": "grease",
+                "b": "solid lubricant",
+                "c": "animal oils",
+                "d": "mineral oils"
+            },
+            "answer": "b"
+        },
+        {
+            "topic": "Chemical Engineering Basics",
+            "question": "One face of a furnace wall is at 1030°C and the other face is exposed to room temperature (30°C). If the thermal conductivity of furnace wall is 3 W . m-1   . k-1  and the wall thickness is 0.3 m, the maximum heat loss (in W/m) is",
+            "options": {
+                "a": "100",
+                "b": "900",
+                "c": "9000",
+                "d": "10000"
+            },
+            "answer": "d"
+        },
+        {
+            "topic": "Chemical Engineering Basics",
+            "question": "Tin is not present as an alloying element in",
+            "options": {
+                "a": "phosphor bronze",
+                "b": "gun metal",
+                "c": "fusible metal",
+                "d": "white metal"
+            },
+            "answer": "d"
+        },
+        {
+            "topic": "Chemical Engineering Basics",
+            "question": "Thermit welding uses the following energy source.",
+            "options": {
+                "a": "Electrical energy.",
+                "b": "Chemical energy.",
+                "c": "Energy of high velocity electrons.",
+                "d": "Heat generated by friction."
+            },
+            "answer": "b"
+        },
+        {
+            "topic": "Chemical Engineering Basics",
+            "question": "The friction factor for the turbulent fluid flow in a rough pipe does not depend upon the",
+            "options": {
+                "a": "pipe roughness & pipe diameter.",
+                "b": "fluid velocity.",
+                "c": "type of flowing fluid.",
+                "d": "both 'b' & 'c'."
+            },
+            "answer": "d"
+        },
+        {
+            "topic": "Chemical Engineering Basics",
+            "question": "Flue gases pass through the following boiler accessories in a high pressure natural circulation boiler.A. Induced draft fan B. Economiser C. Air preheater D. Steam superheater Which of the following gives the correct sequence of flow of the flue gases through the above mentioned boiler accessories ?",
+            "options": {
+                "a": "A, C, B, D",
+                "b": "D, B, C, A",
+                "c": "D, C, B, A",
+                "d": "D, A, B, C"
+            },
+            "answer": "b"
+        },
+        {
+            "topic": "Chemical Engineering Basics",
+            "question": "Case hardening of a material is",
+            "options": {
+                "a": "followed by tempering or carburising.",
+                "b": "preceded by its tempering.",
+                "c": "done to get a soft ductile interior with a very hard surface.",
+                "d": "carried out to get extreme hardness in its core."
+            },
+            "answer": "d"
+        },
+        {
+            "topic": "Chemical Engineering Basics",
+            "question": "Mild steel has __________ crystal lattice structure.",
+            "options": {
+                "a": "face centred cubic (fcc)",
+                "b": "body centred cubic (bcc)",
+                "c": "orthorhombic",
+                "d": "cubic"
+            },
+            "answer": "b"
+        },
+        {
+            "topic": "Chemical Engineering Basics",
+            "question": "Which of the following does not have a sharp melting point ?",
+            "options": {
+                "a": "Thoria",
+                "b": "Glass",
+                "c": "Ice",
+                "d": "Pig iron"
+            },
+            "answer": "b"
+        },
+        {
+            "topic": "Chemical Engineering Basics",
+            "question": "Aluminium is extracted from",
+            "options": {
+                "a": "chalcocite",
+                "b": "bauxite",
+                "c": "galena",
+                "d": "none of these"
+            },
+            "answer": "b"
+        },
+        {
+            "topic": "Chemical Engineering Basics",
+            "question": "__________ fluid force is not considered in the Navier-Stokes equation.",
+            "options": {
+                "a": "Turbulent",
+                "b": "Viscous",
+                "c": "Gravity",
+                "d": "Pressure"
+            },
+            "answer": "a"
+        },
+        {
+            "topic": "Chemical Engineering Basics",
+            "question": "What is the value of entropy at 273°K ?",
+            "options": {
+                "a": "0",
+                "b": "1",
+                "c": "∞",
+                "d": "none of these"
+            },
+            "answer": "a"
+        },
+        {
+            "topic": "Chemical Engineering Basics",
+            "question": "Titanium is added to molten aluminium alloys before casting for the purpose of",
+            "options": {
+                "a": "grain refinement.",
+                "b": "increasing corrosion resistance.",
+                "c": "reducing porosity.",
+                "d": "improving fluidity."
+            },
+            "answer": "d"
+        },
+        {
+            "topic": "Chemical Engineering Basics",
+            "question": "Cemented carbide tools are not suitable for cutting",
+            "options": {
+                "a": "aluminium",
+                "b": "brass",
+                "c": "cast iron",
+                "d": "steel"
+            },
+            "answer": "a"
+        },
+        {
+            "topic": "Chemical Engineering Basics",
+            "question": "The difference between gross & net calorific values of fuel is due to the",
+            "options": {
+                "a": "sensible heat carried away by the flue gases.",
+                "b": "heat carried away by the steam from the moisture content of the fuel.",
+                "c": "heat lost by radiation.",
+                "d": "heat carried away by steam from the combustion of hydrogen in the fuel."
+            },
+            "answer": "d"
+        },
+        {
+            "topic": "Chemical Engineering Basics",
+            "question": "Which of the following is preferred for rivetting ?",
+            "options": {
+                "a": "Lap joint",
+                "b": "Butt joint",
+                "c": "Either (a) or (b)",
+                "d": "Neither (a) nor (b)"
+            },
+            "answer": "b"
+        },
+        {
+            "topic": "Chemical Engineering Basics",
+            "question": "Heating the hypoeutectoid steels to 30°C above the upper critical temperature line, soaking at that temperature and then cooling slowly to the room temperature to form a pearlite & ferrite structure is called",
+            "options": {
+                "a": "tempering",
+                "b": "hardening",
+                "c": "annealing",
+                "d": "normalising"
+            },
+            "answer": "c"
+        }
+    
+]

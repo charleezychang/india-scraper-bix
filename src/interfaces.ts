@@ -1,3 +1,5 @@
+import { Dayjs } from "dayjs";
+
 export interface Deck {
     name: string;
     cards: Card[];
@@ -15,5 +17,12 @@ export interface Card {
     answer: string;
     timesCorrect: number;
     timesWrong: number;
-    nextInterval: Date;
+    nextInterval: Dayjs;
+}
+
+export interface User {
+    uid: string;
+    name: string;
+    email: string;
+    photoURL: string;
 }

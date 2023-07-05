@@ -1,14 +1,18 @@
 import { getAuth, signOut } from "firebase/auth";
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
+import initFirebase from "./config";
+import { User } from "../interfaces";
 
 function useFirebaseAuth() {
-  const [authUser, setAuthUser] = useState(null);
+  const [authUser, setAuthUser] = useState<User | null>(null);
   const [loading, setLoading] = useState(true);
 
+  initFirebase()
   const auth = getAuth();
   const router = useRouter();
   const authStateChangeHandler = (authState: any) => {
+    console.log(authState)
     if (!authState) {
       router.push("/");
       setAuthUser(null);
@@ -16,6 +20,7 @@ function useFirebaseAuth() {
     } else {
       setAuthUser(authState);
       setLoading(false);
+      router.push("/decks");
     }
   };
   const handleLogout = () => {
