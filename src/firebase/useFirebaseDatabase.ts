@@ -1,43 +1,51 @@
 import { getDatabase, ref, set, onValue, push } from "firebase/database";
 import { Card } from "../interfaces";
 import useFirebaseAuth from "./useFirebaseAuth";
+import dayjs from "dayjs";
 
 function useFirebaseDatabase() {
     const { user } = useFirebaseAuth()
     const db = getDatabase();
 
-    function writeCard(card: Card) {
-        // if (user) {
-        //     // set will rewrite unless u push
-        //     console.log(db)
-        //     console.log('users/' + user.uid)
-        //     const reference = ref(db, 'users/' + user['uid'])
-        //     set(reference, card)
-        //     // set(ref(db, 'users/' + user.uid), card);
-        //     // push(ref(db, 'users/' + user.uid + '/cards'), card);
-            // set(push(ref(db, 'users/' + user.uid + '/cards')), card)
-        // }
-        const db = getDatabase();
-        set(ref(db, 'users/' + user?.uid + '/cards'), {
-          username: 'aa',
-          email: 'aaa',
-          profile_picture : 'aaa'
-        });
+    function addCard(card: Card) {
+        // set will rewrite unless u add 'push'
+        // set(ref(db, 'users/' + user.uid), card);
 
+        // userId/cards/date
+        console.log(card)
+        set(push(ref(db, user?.uid + '/cards/' + dayjs().format('MM/DD/YYYY').toString().replaceAll('/', ''))), card)
     }
 
     function readCard() {
         if (user) {
             // listener receives a snapshot that contains the data at the specified path
             onValue(ref(db, 'users/' + user.uid + '/cards'), (snapshot) => {
-                // val() gets the data (only)
+                // val() gets the data (only one)
                 const data = snapshot.val()
             });
         }
     }
 
-    function readAllCard() {
+    function readDeck() {
+        const deck: Card[] = []
+        
+        onValue(ref(db, 'users/' + user?.uid + '/cards'), (snapshot) => {
+            if (snapshot.exists()) {
+                snapshot.forEach(childSnapshot => {
+                    const key = childSnapshot.key
+                    const value = childSnapshot.val()
+    
+                    deck.push({
+                        key: value
+                    })
+                })
+            }
+            else {
+                console.log("No data available")
+            }
+        });
 
+        return deck
     }
 
     function updateCard() {
@@ -50,7 +58,8 @@ function useFirebaseDatabase() {
 
 
     return {
-        writeCard: (card: Card) => writeCard(card) 
+        addCard: (card: Card) => addCard(card),
+        readDeck: readDeck
     }
 }
 

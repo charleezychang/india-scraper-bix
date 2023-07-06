@@ -1,15 +1,15 @@
 import axios from "axios";
 import { load } from "cheerio";
 import { useState } from "react";
-import { Card, Deck } from "../interfaces";
+import { Card } from "../interfaces";
 import dayjs from "dayjs";
 import useFirebaseAuth from "../firebase/useFirebaseAuth";
 import useFirebaseDatabase from "../firebase/useFirebaseDatabase";
 
 function useImportCards() {
-  const [deck, setDeck] = useState<Deck | null>(null)
+  const [deck, setDeck] = useState<Card[] | null>(null)
   const { user } = useFirebaseAuth()
-  const { writeCard } = useFirebaseDatabase()
+  const { addCard, readDeck } = useFirebaseDatabase()
 
   async function testScrape(url: string) {
     const response = await axios.get(url);
@@ -80,7 +80,7 @@ function useImportCards() {
     //         answer: answers[i],
     //         timesCorrect: 0,
     //         timesWrong: 0,
-    //         nextInterval: dayjs()
+    //         nextInterval: dayjs().format('MM/DD/YYYY')
     //       }
 
     //       console.log(card)
@@ -99,7 +99,7 @@ function useImportCards() {
 
     // })
 
-    writeCard({
+    addCard(JSON.parse(JSON.stringify({
       topic: "Chemical Engineering Basics",
       question: "Polystyrene is a light, transparent, thermoplastic material used for making",
       options: {
@@ -111,8 +111,10 @@ function useImportCards() {
       answer: "a",
       timesCorrect: 0,
       timesWrong: 0,
-      nextInterval: dayjs()
-    })
+      cooldown: dayjs().format('MM/DD/YYYY')
+    })))
+
+    readDeck()
   }
 
 
