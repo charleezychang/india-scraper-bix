@@ -14,7 +14,7 @@ function Page() {
         // scrapeWebsite(`https://api.scraperapi.com?api_key=${process.env.NEXT_PUBLIC_SCRAPER_API_SECRET_KEY}&url=https://www.indiabix.com/chemical-engineering/chemical-engineering-basics/171010`)
         console.log(urlToScrape)
         if (urlToScrape) {
-            scrapeWebsite(`https://api.scraperapi.com?api_key=${process.env.NEXT_PUBLIC_SCRAPER_API_SECRET_KEY}&url=${urlToScrape}`)
+            scrapeWebsite(`https://api?api_key=${process.env.NEXT_PUBLIC_SCRAPER_API_SECRET_KEY}&url=${urlToScrape}`)
             // testScrape(`https://api.scraperapi.com?api_key=${process.env.NEXT_PUBLIC_SCRAPER_API_SECRET_KEY}&url=${urlToScrape}`)
         }
     }

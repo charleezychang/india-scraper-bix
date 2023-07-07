@@ -9,7 +9,7 @@ import useFirebaseDatabase from "../firebase/useFirebaseDatabase";
 function useImportCards() {
   const [deck, setDeck] = useState<Card[] | null>(null)
   const { user } = useFirebaseAuth()
-  const { addCard, readDeck } = useFirebaseDatabase()
+  const { addCard, readDeck, initializeDeck } = useFirebaseDatabase()
 
   async function testScrape(url: string) {
     const response = await axios.get(url);
@@ -98,23 +98,35 @@ function useImportCards() {
     // itemBank.forEach(card => {
 
     // })
+    initializeDeck()
+    // addCard(JSON.parse(JSON.stringify({
+    //   topic: "Chemical Engineering Basics",
+    //   question: "Polystyrene is a light, transparent, thermoplastic material used for making",
+    //   options: {
+    //     a: "toys and combs",
+    //     b: "packaging bags",
+    //     c: "non-sticking utensils",
+    //     d: "electrical insulation"
+    //   },
+    //   answer: "a",
+    //   timesCorrect: 0,
+    //   timesWrong: 0,
+    //   cooldown: dayjs().subtract(1, 'day').format('MM/DD/YYYY')
+    // })))
 
-    addCard(JSON.parse(JSON.stringify({
-      topic: "Chemical Engineering Basics",
-      question: "Polystyrene is a light, transparent, thermoplastic material used for making",
-      options: {
-        a: "toys and combs",
-        b: "packaging bags",
-        c: "non-sticking utensils",
-        d: "electrical insulation"
-      },
-      answer: "a",
-      timesCorrect: 0,
-      timesWrong: 0,
-      cooldown: dayjs().format('MM/DD/YYYY')
-    })))
+    // addCard(JSON.parse(JSON.stringify({
+    //   topic: "Chemical Engineering Basics",
+    //   question: "The difference between gross & net calorific values of fuel is due to the",
+    //   options: {
+    //     "a": "sensible heat carried away by the flue gases.",
+    //     "b": "heat carried away by the steam from the moisture content of the fuel.",
+    //     "c": "heat lost by radiation.",
+    //     "d": "heat carried away by steam from the combustion of hydrogen in the fuel."
+    //   },
+    //   answer: "d"
+    // })))
 
-    readDeck()
+    // console.log(readDeck())
   }
 
 
