@@ -1,5 +1,7 @@
 import { getAuth, GoogleAuthProvider, signInWithPopup } from "firebase/auth";
 import { useRouter } from "next/navigation";
+import { Box, Button } from "@chakra-ui/react";
+import PrimaryButton from "../components/PrimaryButton";
 
 function LoginWithGoogle() {
   const provider = new GoogleAuthProvider();
@@ -21,9 +23,13 @@ function LoginWithGoogle() {
   };
 
   return (
-    <button type="button" onClick={() => handleLogin()}>
-      Login
-    </button>
+    <>
+      {/* <Button colorScheme='brand.primary' onClick={() => handleLogin()}>
+        Login with Google
+      </Button> */}
+      <PrimaryButton displayText='Login with Google' onClick={handleLogin}/>
+    </>
+
   );
 }
 

@@ -1,7 +1,8 @@
-import './globals.css'
 import { Inter } from 'next/font/google'
-
-const inter = Inter({ subsets: ['latin'] })
+import './globals.css'
+import { Providers } from "./providers";
+import Image from 'next/image';
+import background from '../src/assets/images/background.svg'
 
 export const metadata = {
   title: 'Indiabix Spaced Repetition',
@@ -15,7 +16,18 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className="relative h-screen">
+        <Providers>
+          <Image
+            src={background}
+            alt=''
+            quality="100"
+            fill
+            className='object-cover'
+          />
+          {children}
+        </Providers>
+      </body>
     </html>
   )
 }

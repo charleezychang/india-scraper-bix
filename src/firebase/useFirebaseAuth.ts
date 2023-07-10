@@ -13,7 +13,7 @@ function useFirebaseAuth() {
   const router = useRouter();
   const authStateChangeHandler = (authState: any) => {
     if (!authState) {
-      router.push("/");
+      router.push("/login");
       setAuthUser(null);
       setLoading(false);
     } else {
