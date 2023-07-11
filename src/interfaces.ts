@@ -18,8 +18,8 @@ export interface Card {
 }
 
 export interface User {
-    uid: string;
-    name: string;
+    localId: string;
+    displayName: string;
     email: string;
     photoURL: string;
 }

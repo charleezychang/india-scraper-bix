@@ -2,7 +2,7 @@
 
 import useFirebaseAuth from '@/src/firebase/useFirebaseAuth'
 import useImportCards from '@/src/hooks/useImportCards'
-import { Button, Card, CardBody, CardHeader, Text, Input } from '@chakra-ui/react'
+import { Button, Card, CardBody, CardHeader, Text, Input, VStack } from '@chakra-ui/react'
 import { ChangeEvent, useState } from 'react'
 import PrimaryButton from '@/src/components/PrimaryButton'
 import Profile from '@/src/components/Profile'
@@ -27,22 +27,22 @@ function Page() {
     }
 
     return (
-
-        <div className='flex items-center justify-center h-screen'>
-            
-            <Profile/>
-            <Card className='bg-[#242424] w-[300px] h-[220px] rounded-md p-4 items-center'>
-                <CardHeader display="flex" alignItems="center" flexDirection='column'>
-                    <Text className='text-white text-2xl'>Deck</Text>
-
-                </CardHeader>
-                <CardBody>
-                    <Input placeholder="Input url of a section's last page" onChange={handleUrlToScrapeChange} />
-                    <PrimaryButton displayText='Logout' onClick={logOut}/>
-                    <PrimaryButton displayText='Import' onClick={handleImportCards}/>
-                </CardBody>
-
-            </Card>
+        <div className='tw-flex tw-items-center tw-justify-center tw-h-screen tw--translate-y-40'>
+            <VStack>
+                <div className='tw-self-start'>
+                    <Profile />
+                </div>
+                <Card className='tw-bg-[#242424] tw-w-[350px] tw-rounded-b-xl tw-rounded-tl-xl tw-p-4 tw-items-center tw--translate-y-6'>
+                    <CardHeader display="flex" alignItems="center" flexDirection='column'>
+                        <Text className='tw-text-white tw-text-2xl'>Deck</Text>
+                    </CardHeader>
+                    <CardBody>
+                        <Input placeholder="Input url of a section's last page" onChange={handleUrlToScrapeChange} />
+                        <PrimaryButton displayText='Logout' onClick={logOut} />
+                        <PrimaryButton displayText='Import' onClick={handleImportCards} />
+                    </CardBody>
+                </Card>
+            </VStack>
         </div>
     )
 }
