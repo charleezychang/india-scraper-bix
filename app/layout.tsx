@@ -16,14 +16,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="relative h-screen">
+      <body className="tw-relative tw-h-screen">
         <Providers>
           <Image
             src={background}
             alt=''
             quality="100"
             fill
-            className='object-cover'
+            className='tw-object-cover'
           />
           {children}
         </Providers>

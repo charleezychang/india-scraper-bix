@@ -10,7 +10,7 @@ export default function Home(props: any) {
   const { user, loading, logOut } = useFirebaseAuth()
 
   return (
-    <div className='flex items-center justify-center h-screen bg-[#0A0A0A]'>
+    <div className='tw-flex tw-items-center tw-justify-center tw-h-screen tw-bg-[#0A0A0A]'>
       {loading && <Spinner size='xl' color='brand.primary' />}
     </div>
   );

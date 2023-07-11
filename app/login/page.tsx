@@ -16,34 +16,34 @@ function Page() {
     initFirebase()
 
     return (
-        <div className='flex items-center justify-center h-screen'>
-            <Card className='bg-[#242424] w-[350px] rounded-xl p-4 items-center'>
+        <div className='tw-flex tw-items-center tw-justify-center tw-h-screen'>
+            <Card className='tw-bg-[#242424] tw-w-[350px] tw-rounded-xl tw-p-4 tw-items-center'>
                 <CardHeader display="flex" alignItems="center" flexDirection='column'>
-                    <Text className='text-white text-2xl'>Indiabix Scraper</Text>
-                    <Text className='text-white text-xl'>with spaced repetition</Text>
+                    <Text className='tw-text-white tw-text-2xl'>Indiabix Scraper</Text>
+                    <Text className='tw-text-white tw-text-xl'>with spaced repetition</Text>
                 </CardHeader>
-                <CardBody className='pb-10'>
+                <CardBody className='tw-pb-10'>
                     <LoginWithGoogle />
                 </CardBody>
-                <Divider borderColor={'brand.text'} className='mx-4' />
-                <Text className='-translate-y-[14px] px-4 bg-[#242424]' color='brand.text'>or</Text>
-                <CardBody className='pt-4'>
+                <Divider borderColor={'brand.text'} className='tw-mx-4' />
+                <Text className='tw--translate-y-[14px] tw-px-4 tw-bg-[#242424]' color='brand.text'>or</Text>
+                <CardBody className='tw-pt-4'>
                     <VStack spacing='24px'>
                         <InputGroup>
                             <InputLeftElement pointerEvents='none' p={2}>
                                 <Image src={Person} alt='person-icon' />
                             </InputLeftElement>
-                            <Input placeholder='email address' color='brand.text' />
+                            <Input placeholder='email address' color='brand.text' focusBorderColor='brand.accent'/>
                         </InputGroup>
                         <InputGroup>
                             <InputLeftElement pointerEvents='none' p={2}>
                                 <Image src={Lock} alt='lock-icon' />
                             </InputLeftElement>
-                            <Input type='password' placeholder='password' color='brand.text' />
+                            <Input type='password' placeholder='password' color='brand.text' focusBorderColor='brand.accent'/>
                         </InputGroup>
                     </VStack>
                 </CardBody>
-                <CardFooter className='-translate-y-[14px]'>
+                <CardFooter className='tw--translate-y-[14px]'>
                     <HStack spacing='16px'>
                         <PrimaryButton displayText='Login' onClick={() => { }} width='100px' />
                         <PrimaryButton displayText='Register' onClick={() => { }} width='100px' />
