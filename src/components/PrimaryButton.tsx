@@ -4,9 +4,10 @@ import React from 'react'
 interface Props {
     displayText: string
     onClick: () => any
+    width?: string
 }
 
-function PrimaryButton({ displayText, onClick }: Props) {
+function PrimaryButton({ displayText, onClick, width }: Props) {
 
     const handleClick = () => {
         onClick()
@@ -16,6 +17,7 @@ function PrimaryButton({ displayText, onClick }: Props) {
         <Box
             as='button'
             height='36px'
+            width={width && width}
             lineHeight='1.2'
             transition='all 0.2s cubic-bezier(.08,.52,.52,1)'
             px='16px'

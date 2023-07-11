@@ -24,10 +24,7 @@ function LoginWithGoogle() {
 
   return (
     <>
-      {/* <Button colorScheme='brand.primary' onClick={() => handleLogin()}>
-        Login with Google
-      </Button> */}
-      <PrimaryButton displayText='Login with Google' onClick={handleLogin}/>
+      <PrimaryButton displayText='Continue with Google' onClick={handleLogin}/>
     </>
 
   );

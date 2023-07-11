@@ -23,6 +23,7 @@ function useFirebaseAuth() {
     }
   };
   const handleLogout = () => {
+    router.push("/login");
     signOut(auth).then((res) => {
       // clear cookies
       // update databaseZ

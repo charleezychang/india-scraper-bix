@@ -5,6 +5,7 @@ import useImportCards from '@/src/hooks/useImportCards'
 import { Button, Card, CardBody, CardHeader, Text, Input } from '@chakra-ui/react'
 import { ChangeEvent, useState } from 'react'
 import PrimaryButton from '@/src/components/PrimaryButton'
+import Profile from '@/src/components/Profile'
 
 function Page() {
     const { user, loading, logOut } = useFirebaseAuth()
@@ -28,6 +29,8 @@ function Page() {
     return (
 
         <div className='flex items-center justify-center h-screen'>
+            
+            <Profile/>
             <Card className='bg-[#242424] w-[300px] h-[220px] rounded-md p-4 items-center'>
                 <CardHeader display="flex" alignItems="center" flexDirection='column'>
                     <Text className='text-white text-2xl'>Deck</Text>

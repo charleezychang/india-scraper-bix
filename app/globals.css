@@ -13,8 +13,3 @@
   --accent: #90ee86;
   --text: #f0f0f0;
 }
-
-body {
-  /* color: var(--text); */
-  background: var(--background)
-}

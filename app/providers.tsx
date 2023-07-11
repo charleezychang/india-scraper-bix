@@ -8,7 +8,7 @@ const colors = {
     brand: {
         background: 'red',
         primary: '#454545',
-        seconday: '#242424',
+        secondary: '#242424',
         text: '#f0f0f0',
         accent: '#90ee86',
     },
