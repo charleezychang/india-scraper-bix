@@ -1,8 +1,9 @@
+import { Card } from '@chakra-ui/react'
 import React from 'react'
 
 function Profile() {
   return (
-    <p>Profile</p>
+    <Card>Profile</Card>
   )
 }
 
