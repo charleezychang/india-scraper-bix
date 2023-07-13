@@ -1,13 +1,14 @@
-import { Box } from '@chakra-ui/react'
+import { Box, Spinner } from '@chakra-ui/react'
 import React from 'react'
 
 interface Props {
     displayText: string
     onClick: () => any
     width?: string
+    isLoading?: boolean
 }
 
-function PrimaryButton({ displayText, onClick, width }: Props) {
+function PrimaryButton({ displayText, onClick, width, isLoading }: Props) {
 
     const handleClick = () => {
         onClick()
@@ -38,7 +39,7 @@ function PrimaryButton({ displayText, onClick, width }: Props) {
             }}
             onClick={handleClick}
         >
-            {displayText}
+            {isLoading ? <Spinner size='sm'/> : displayText}
         </Box>
     )
 }

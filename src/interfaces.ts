@@ -13,12 +13,12 @@ export interface Card {
         answer: string;
         timesCorrect: number;
         timesWrong: number;
-        cooldown: Dayjs;
+        // cooldown: Dayjs;
     }
 }
 
 export interface User {
-    localId: string;
+    uid: string;
     displayName: string;
     email: string;
     photoURL: string;

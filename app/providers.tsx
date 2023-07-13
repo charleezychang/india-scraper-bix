@@ -10,6 +10,7 @@ const colors = {
         secondary: '#242424',
         text: '#f0f0f0',
         accent: '#90ee86',
+        error: '#ED4337'
     },
 }
 

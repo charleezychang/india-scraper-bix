@@ -15,8 +15,9 @@ function useFirebaseDatabase() {
         // set(ref(db, 'users/' + user.uid), card);
 
         // userId/cards/date
-        // console.log(card)
+        setIsLoading(true)
         set(push(ref(db, user?.uid + '/cards/' + dayjs().format('MM/DD/YYYY').toString().replaceAll('/', ''))), card)
+            .then(_res => { setIsLoading(false) })
     }
 
     function readCard() {
@@ -56,6 +57,7 @@ function useFirebaseDatabase() {
     function initializeDeck() {
         const datesAsKeys: any = []
         const cardsAsObjects: any = []
+        setIsLoading(true)
 
         onValue(ref(db, user?.uid + '/cards'), (snapshot) => {
             if (snapshot.exists()) {
@@ -84,6 +86,8 @@ function useFirebaseDatabase() {
                 deleteDeck(dateAsKey)
             })
         }
+        setIsLoading(false)
+
     }
 
     function updateCard() {
@@ -105,7 +109,8 @@ function useFirebaseDatabase() {
     return {
         addCard: (card: Card) => addCard(card),
         readDeck: readDeck,
-        initializeDeck: initializeDeck
+        initializeDeck: initializeDeck,
+        isLoading: isLoading
     }
 }
 
