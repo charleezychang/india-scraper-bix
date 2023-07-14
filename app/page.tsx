@@ -6,7 +6,6 @@ import Image from 'next/image';
 import background from '../src/assets/images/background.svg'
 
 export default function Home(props: any) {
-  initFirebase()
   const { user, loading, logOut } = useFirebaseAuth()
 
   return (

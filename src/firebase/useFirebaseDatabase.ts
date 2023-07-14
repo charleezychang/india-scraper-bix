@@ -20,21 +20,22 @@ function useFirebaseDatabase() {
             .then(_res => { setIsLoading(false) })
     }
 
-    function readCard() {
+    function readCard(datetime: Dayjs) {
         if (user) {
             // listener receives a snapshot that contains the data at the specified path
-            onValue(ref(db, 'users/' + user.uid + '/cards'), (snapshot) => {
+            onValue(ref(db, user.uid + '/cards/' + datetime.format('MM/DD/YYYY').toString().replaceAll('/', '')), (snapshot) => {
                 // val() gets the data (only one)
                 const data = snapshot.val()
             });
         }
     }
 
-    function readDeck() {
+    function readDeck(datetime: Dayjs) {
         const deck: Card[] = []
         // get all decks
-
-        onValue(ref(db, user?.uid + '/cards'), (snapshot) => {
+        console.log(user)
+        console.log(user?.uid + '/cards/' + datetime.format('MM/DD/YYYY').toString().replaceAll('/', ''))
+        onValue(ref(db, user?.uid + '/cards/' + datetime.format('MM/DD/YYYY').toString().replaceAll('/', '')), (snapshot) => {
             if (snapshot.exists()) {
                 snapshot.forEach(childSnapshot => {
                     const key = childSnapshot.key
@@ -49,7 +50,8 @@ function useFirebaseDatabase() {
                 console.log("No data available")
             }
         });
-
+        console.log(deck)
+        console.log('reading deck done')
         return deck
     }
 

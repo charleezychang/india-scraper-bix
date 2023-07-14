@@ -27,9 +27,6 @@ function Profile() {
     const router = useRouter();
     const { isOpen, onOpen, onClose } = useDisclosure()
 
-    console.log(user)
-    console.log(user?.photoURL)
-    console.log(user?.displayName)
     const handleStatisticsClick = () => {
         router.push("/statistics");
     }

@@ -1,8 +1,12 @@
+'use client'
+
 import { Inter } from 'next/font/google'
 import './globals.css'
 import { Providers } from "./providers";
 import Image from 'next/image';
 import background from '../src/assets/images/background.svg'
+import initFirebase from '@/src/firebase/config';
+import useFirebaseAuth from '@/src/firebase/useFirebaseAuth';
 
 export const metadata = {
   title: 'Indiabix Spaced Repetition',
@@ -14,6 +18,10 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+
+  initFirebase()
+  const { user, loading, logOut } = useFirebaseAuth()
+
   return (
     <html lang="en">
       <body className="tw-relative tw-h-screen">

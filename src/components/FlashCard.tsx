@@ -1,6 +1,6 @@
 import { Button, CardBody, CardHeader, Text, Input, VStack, Divider, Tooltip, HStack } from '@chakra-ui/react'
 
-import React, { ChangeEvent, useState } from 'react'
+import React, { ChangeEvent, useEffect, useState } from 'react'
 import FlashCardOption from './FlashCardOption'
 import { Card } from '../interfaces'
 import Image from 'next/image'
@@ -8,16 +8,33 @@ import TooltipIcon from '../assets/icons/Tooltip.svg'
 import PrimaryButton from './PrimaryButton'
 import CooldownOption from './CooldownOption'
 
-function FlashCard(card: Card) {
+interface Props {
+  card: Card | undefined
+}
+
+function FlashCard({card} : Props) {
   const [chosenAnswer, setChosenAnswer] = useState<string | null>(null)
   const [answerRevealed, setAnswerRevealed] = useState<boolean>(false)
   const [cooldown, setCooldown] = useState<number | null>(null)
   const [customCooldown, setCustomCooldown] = useState<number | null>(null)
+  const [extractedCard, setExtractedCard] = useState<any>(null)
+
+  useEffect(() => {
+    for (const generatedProperty in card) {
+      setExtractedCard(card[generatedProperty])
+    }
+  }, [])
+  
+  useEffect(() => {
+    console.log(extractedCard)
+  }, [extractedCard])
+  
 
   const handleRevealAnswer = (answer: string) => {
     if (answerRevealed) {
       return
     }
+    
     setChosenAnswer(answer)
     setAnswerRevealed(true)
   }
@@ -40,12 +57,12 @@ function FlashCard(card: Card) {
 
   return (
     <>
-      <Text className='tw-mb-4' color='brand.text'>The softness or hardness of a grinding wheel depends upon the type & amount of bonding material used. For general purpose cutter grinding __________ grinding wheel is normally used.</Text>
+      <Text className='tw-mb-4' color='brand.text'>{extractedCard?.question}</Text>
       <VStack className='tw-mb-4'>
-        <FlashCardOption displayText='H2' onClick={() => handleRevealAnswer('a')} selected={chosenAnswer} optionLetter='a' answer='a' answerRevealed={answerRevealed} />
-        <FlashCardOption displayText='CCl4' onClick={() => handleRevealAnswer('b')} selected={chosenAnswer} optionLetter='b' answer='a' answerRevealed={answerRevealed} />
-        <FlashCardOption displayText='C2H2' onClick={() => handleRevealAnswer('c')} selected={chosenAnswer} optionLetter='c' answer='a' answerRevealed={answerRevealed} />
-        <FlashCardOption displayText='S' onClick={() => handleRevealAnswer('d')} selected={chosenAnswer} optionLetter='d' answer='a' answerRevealed={answerRevealed} />
+        <FlashCardOption displayText={extractedCard?.options.a} onClick={() => handleRevealAnswer('a')} selected={chosenAnswer} optionLetter='a' answer={extractedCard?.answer} answerRevealed={answerRevealed} />
+        <FlashCardOption displayText={extractedCard?.options.b} onClick={() => handleRevealAnswer('b')} selected={chosenAnswer} optionLetter='b' answer={extractedCard?.answer} answerRevealed={answerRevealed} />
+        <FlashCardOption displayText={extractedCard?.options.c} onClick={() => handleRevealAnswer('c')} selected={chosenAnswer} optionLetter='c' answer={extractedCard?.answer} answerRevealed={answerRevealed} />
+        <FlashCardOption displayText={extractedCard?.options.d} onClick={() => handleRevealAnswer('d')} selected={chosenAnswer} optionLetter='d' answer={extractedCard?.answer} answerRevealed={answerRevealed} />
       </VStack>
       <Divider color='brand.text' className='tw-mb-2' />
       <HStack spacing={1} className='tw-mb-2'>
@@ -59,9 +76,8 @@ function FlashCard(card: Card) {
         <CooldownOption displayText='3' onClick={() => { handleSelectCooldown(3) }} selected={cooldown} answerRevealed={answerRevealed} />
         <CooldownOption displayText='7' onClick={() => { handleSelectCooldown(7) }} selected={cooldown} answerRevealed={answerRevealed} />
         <CooldownOption displayText='14' onClick={() => { handleSelectCooldown(14) }} selected={cooldown} answerRevealed={answerRevealed} />
-        {answerRevealed &&
-          <Input borderColor={answerRevealed ? customCooldown ? 'brand.accent' : 'brand.text' : 'brand.secondary'} height='36px' padding={2} type='number' textAlign={'center'} color='brand.text' placeholder='' onChange={handleCustomCooldownChange} />
-        }
+        <Input disabled={!answerRevealed} borderColor={answerRevealed ? customCooldown ? 'brand.accent' : 'brand.text' : 'brand.secondary'} height='36px' padding={2} type='number' textAlign={'center'} color='brand.text' placeholder='' onChange={handleCustomCooldownChange} />
+      
       </HStack>
       <Divider color='brand.text'/>
     </>

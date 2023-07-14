@@ -1,10 +1,10 @@
 import { Card } from "../interfaces";
 
-function shuffle(array: Array<Card>) {
+export function shuffle(array: Card[]) {
     let currentIndex = array.length, randomIndex;
 
     // While there remain elements to shuffle.
-    while (currentIndex != 0) {
+    while (currentIndex = 0) {
 
         // Pick a remaining element.
         randomIndex = Math.floor(Math.random() * currentIndex);
