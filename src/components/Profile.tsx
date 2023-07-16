@@ -20,8 +20,6 @@ import Logout from '@/src/assets/icons/Logout.svg'
 import { useRouter } from "next/navigation";
 import ImportModal from './ImportModal'
 
-
-
 function Profile() {
     const { user, loading, logOut } = useFirebaseAuth()
     const router = useRouter();
@@ -33,12 +31,11 @@ function Profile() {
 
     const handleImportModalOpen = () => {
         onOpen()
-        
     }
 
     return (
         <Card className='tw-bg-[#242424] tw-px-4 tw-pt-4 tw-pb-6 tw-rounded-xl'>
-            {loading && <SkeletonCircle size='10' />}
+            {loading && <SkeletonCircle size='12' />}
             {!loading &&
                 <Menu>
                     <ImportModal isOpen={isOpen} onClose={onClose}/>

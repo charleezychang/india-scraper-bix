@@ -20,8 +20,10 @@ function FlashCardOption({ displayText, onClick, selected, optionLetter, answerR
     return (
         <Box
             as={!answerRevealed ? 'button' : undefined}
+            position='relative'
             display="flex"
-            height='36px'
+            minHeight='36px'
+            textAlign='left'
             width='100%'
             transition='all 0.2s cubic-bezier(.08,.52,.52,1)'
             paddingRight='16px'
@@ -32,13 +34,12 @@ function FlashCardOption({ displayText, onClick, selected, optionLetter, answerR
             color={(answerRevealed && optionLetter == answer) ? 'brand.primary' : ((optionLetter == selected) && (selected != answer)) ? 'brand.text' : 'brand.primary'}
             _hover={!answerRevealed ? { bg: 'brand.primary', color: 'brand.text' } : undefined}
             justifyContent="start"
-            alignItems='center'
+            alignItems='stretch'
             onClick={handleClick}
         >
             <Text
                 bgColor='brand.primary'
-                height='100%'
-                width='30px'
+                minWidth='30px'
                 color='brand.text'
                 fontSize='16px'
                 display="flex"
@@ -46,10 +47,13 @@ function FlashCardOption({ displayText, onClick, selected, optionLetter, answerR
                 justifyContent="center"
                 borderLeftRadius='6px'
                 marginRight='8px'
+                className='tw-h-[inherit]'
             >
                 {optionLetter}.
             </Text>
-            {displayText}
+            <Box alignSelf='center'>
+                {displayText}
+            </Box>
         </Box>
     )
 }

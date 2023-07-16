@@ -10,7 +10,6 @@ interface Props {
 }
 
 function PrimaryButton({ displayText, onClick, width, isLoading, disabled }: Props) {
-    console.log(displayText + disabled)
     const handleClick = () => {
         onClick()
     }
@@ -22,6 +21,7 @@ function PrimaryButton({ displayText, onClick, width, isLoading, disabled }: Pro
             disabled={disabled}
             flexDirection='row'
             alignItems='center'
+            justifyContent={width && 'center'}
             height='36px'
             width={width && width}
             lineHeight='1.2'

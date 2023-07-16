@@ -18,8 +18,8 @@ function useFirebaseAuth() {
       setLoading(false);
     } else {
       setAuthUser(authState);
-      setLoading(false);
       router.push("/decks");
+      setLoading(false);
     }
   };
   const handleLogout = () => {
