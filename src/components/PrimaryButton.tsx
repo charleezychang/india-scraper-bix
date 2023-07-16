@@ -6,17 +6,22 @@ interface Props {
     onClick: () => any
     width?: string
     isLoading?: boolean
+    disabled?: boolean
 }
 
-function PrimaryButton({ displayText, onClick, width, isLoading }: Props) {
-
+function PrimaryButton({ displayText, onClick, width, isLoading, disabled }: Props) {
+    console.log(displayText + disabled)
     const handleClick = () => {
         onClick()
     }
 
     return (
         <Box
-            as='button'
+            as={disabled ? 'button' : undefined}
+            display='flex'
+            disabled={disabled}
+            flexDirection='row'
+            alignItems='center'
             height='36px'
             width={width && width}
             lineHeight='1.2'
@@ -25,21 +30,17 @@ function PrimaryButton({ displayText, onClick, width, isLoading }: Props) {
             borderRadius='4px'
             fontSize='14px'
             fontWeight='semibold'
-            bg='brand.accent'
-            color='brand.primary'
-            _hover={{ bg: '#ebedf0' }}
-            _active={{
+            bg={disabled ? 'brand.primary' : 'brand.accent'}
+            color={disabled ? 'brand.secondary' : 'brand.primary'}
+            _hover={disabled ? { bg: '' } : { bg: '#ebedf0' }}
+            _active={disabled ? {} : {
                 bg: '#dddfe2',
                 transform: 'scale(0.98)',
                 borderColor: '#bec3c9',
             }}
-            _focus={{
-                boxShadow:
-                    '0 0 1px 2px rgba(88, 144, 255, .75), 0 1px 1px rgba(0, 0, 0, .15)',
-            }}
             onClick={handleClick}
         >
-            {isLoading ? <Spinner size='sm'/> : displayText}
+            {isLoading ? <Spinner size='sm' /> : displayText}
         </Box>
     )
 }

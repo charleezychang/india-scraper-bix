@@ -12,15 +12,11 @@ function useFirebaseAuth() {
   const auth = getAuth();
   const router = useRouter();
   const authStateChangeHandler = (authState: any) => {
-    console.log(authState)
     if (!authState) {
-      console.log('no auth state')
       router.push("/login");
       setAuthUser(null);
       setLoading(false);
     } else {
-      console.log('has auth state')
-
       setAuthUser(authState);
       setLoading(false);
       router.push("/decks");

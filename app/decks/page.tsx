@@ -1,74 +1,60 @@
 "use client";
 
 import {
-  Button,
   Card,
   CardBody,
-  CardHeader,
-  Text,
-  Input,
-  VStack,
-  CardFooter,
+  VStack
 } from "@chakra-ui/react";
-import { ChangeEvent, useEffect, useState } from "react";
-import PrimaryButton from "@/src/components/PrimaryButton";
+import { useEffect, useState } from "react";
 import Profile from "@/src/components/Profile";
 import useFirebaseDatabase from "@/src/firebase/useFirebaseDatabase";
 import FlashCard from "@/src/components/FlashCard";
 import dayjs from "dayjs";
 import { Card as CardType } from "@/src/interfaces";
 import useFirebaseAuth from "@/src/firebase/useFirebaseAuth";
-import { shuffle } from "@/src/hooks/utils";
 
 function Page() {
-  const { user, loading, logOut } = useFirebaseAuth();
+  const { user } = useFirebaseAuth();
   const { initializeDeck, readDeck } = useFirebaseDatabase();
+  const [isDeckInitialized, setIsDeckInitialized] = useState(false);
   const [deck, setDeck] = useState<CardType[]>([]);
-  const [shuffledDeck, setShuffledDeck] = useState<CardType[]>([]);
   const [cardShown, setCardShown] = useState<CardType>()
-
-  useEffect(() => {
-    // initializeDeck();
-  }, []);
 
   useEffect(() => {
     initializeDeck();
 
-    setDeck((prevState) => readDeck(dayjs()));
-    console.log("on deck");
+    const fetchData = async () => {
+      try {
+        initializeDeck();
+        const res = await readDeck(dayjs());
+        setDeck(res as CardType[]);
+      } catch (error) {
+        console.error(error);
+      }
+    };
+
+    fetchData().then(res => {
+      setIsDeckInitialized(true)
+    })
   }, [user]);
 
   useEffect(() => {
-    showRandomCard()
-    console.log(deck);
+    if (deck.length > 0) {
+      showRandomCard();
+    }
   }, [deck]);
-
-useEffect(() => {
-    console.log(cardShown)
-}, [cardShown])
-
 
   const showRandomCard = () => {
     const index = Math.floor(Math.random() * deck.length);
-    const item = deck[index];
-    const splicedDeck = deck.splice(index, 1);
-    // const shuffledDeck = {'asdasd' : {
-    //     topic: 'sss',
-    //     question: 'jello',
-    //     options: {
-    //       a: 'aaaaaaaaaa',
-    //       b: 'bbbbbbbbb',
-    //       c: 'ccccccccccccc',
-    //       d: 'dddddddddddd',
-    //     },
-    //     answer: 'a',
-    //     timesCorrect: 0,
-    //     timesWrong: 0,
-    //   }}
-    console.log(item)
+    const item = deck && deck[index];
+    const updatedDeck = [...deck];
+    updatedDeck.splice(index, 1);
+
+    // Update the deck state with the updated array
+    // setDeck(updatedDeck);
+
     setCardShown(item)
   };
-
 
 
   return (
@@ -78,15 +64,9 @@ useEffect(() => {
           <Profile />
         </div>
         <Card className="tw-bg-[#242424] tw-w-[350px] tw-rounded-b-xl tw-rounded-tr-xl tw-p-4 tw-items-center tw--translate-y-8">
-          {/* <CardHeader display="flex" alignItems="center" flexDirection='column'>
-                        <Text className='tw-text-white tw-text-2xl'>Deck</Text>
-                    </CardHeader> */}
           <CardBody>
-            <FlashCard card={cardShown}/>
-            </CardBody>
-          <CardFooter>
-            <PrimaryButton displayText="Next →" onClick={() => {}} />
-          </CardFooter>
+            <FlashCard card={cardShown} showRandomCard={showRandomCard} />
+          </CardBody>
         </Card>
       </VStack>
     </div>

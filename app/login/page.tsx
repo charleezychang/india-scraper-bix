@@ -13,8 +13,7 @@ import Person from '../../src/assets/icons/Person.svg'
 import Lock from '../../src/assets/icons/Lock.svg'
 
 function Page() {
-    initFirebase()
-
+    
     return (
         <div className='tw-flex tw-items-center tw-justify-center tw-h-screen'>
             <Card className='tw-bg-[#242424] tw-w-[350px] tw-rounded-xl tw-p-4 tw-items-center'>
