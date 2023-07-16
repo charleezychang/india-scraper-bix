@@ -25,22 +25,22 @@ function Page() {
   const [shownInitialCard, setShowInitialCard] = useState<boolean>(false)
 
   useEffect(() => {
-    const fetchData = async () => {
-      try {
-        setIsInitializing(true)
-        await initializeDeck();
-        const res = await readDeck(dayjs());
-        setDeck(res as CardType[]);
-        setIsInitializing(false)
-
-      } catch (error) {
-        setIsInitializing(false)
-        console.error(error);
-      }
-    };
-
     fetchData()
   }, [user]);
+
+  const fetchData = async () => {
+    try {
+      setIsInitializing(true)
+      await initializeDeck();
+      const res = await readDeck(dayjs());
+      setDeck(res as CardType[]);
+      setIsInitializing(false)
+
+    } catch (error) {
+      setIsInitializing(false)
+      console.error(error);
+    }
+  };
 
   useEffect(() => {
     if (!shownInitialCard && deck.length > 0) {
@@ -73,7 +73,7 @@ function Page() {
     <div className="tw-flex tw-items-center tw-justify-center tw-h-screen">
       <VStack>
         <div className="tw-self-start">
-          <Profile />
+          <Profile fetchData={fetchData}/>
         </div>
         <Card className="tw-bg-[#242424] tw-w-[350px] tw-min-h-[442px] tw-rounded-b-xl tw-rounded-tr-xl tw-p-4 tw-items-center tw--translate-y-8">
           {

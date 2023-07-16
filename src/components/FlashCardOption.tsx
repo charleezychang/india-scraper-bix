@@ -51,7 +51,7 @@ function FlashCardOption({ displayText, onClick, selected, optionLetter, answerR
             >
                 {optionLetter}.
             </Text>
-            <Box alignSelf='center'>
+            <Box alignSelf='center' paddingY='8px'>
                 {displayText}
             </Box>
         </Box>
