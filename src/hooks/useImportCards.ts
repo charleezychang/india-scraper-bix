@@ -27,12 +27,28 @@ function useImportCards() {
     // console.log(questions)
   }
 
+  const clz = (page: string) => {
+    let lz = ''
+    let foundNlz = false
+    for (var i = 0; i < page.length; i++) {
+      if (page.charAt(i) == '0' && !foundNlz) {
+        lz = lz + '0'
+      }
+      else {
+        foundNlz = true
+      }
+    }
+    return lz
+  }
+
   async function scrapeWebsite(url: string) {
     setIsImporting(true)
     // Parse the page for looping
     let indexLastForwardSlash = url.lastIndexOf('/')
     let splitUrl = url.split('/')
     let page = parseInt(splitUrl[splitUrl.length - 1])
+    let lz = clz(splitUrl[splitUrl.length - 1])
+    let totalPage = lz + page.toString()
     let topic = splitUrl[splitUrl.length - 2].split("-").filter(x => x.length > 0).map((x) => (x.charAt(0).toUpperCase() + x.slice(1))).join(" ");
     // Loop through each page
     do {
@@ -42,7 +58,7 @@ function useImportCards() {
         const answers: string[] = []
 
         // Initialize cheerio
-        const response = await axios.get(url.slice(0, indexLastForwardSlash) + "/" + page);
+        const response = await axios.get(url.slice(0, indexLastForwardSlash) + "/" + totalPage);
         const $ = load(response.data);
 
         // Populate questions
@@ -77,14 +93,14 @@ function useImportCards() {
             timesWrong: 0,
           })))
         })
-        
+
         page--;
+        totalPage = lz + page.toString()
       } catch (error) {
         console.error("Error:", error);
       }
-
     }
-    while (page.toString().slice(4, page.toString().length) != '00')
+    while (totalPage.toString().slice(4, totalPage.toString().length) != '00')
 
     setIsImporting(false)
   }

@@ -27,7 +27,7 @@ function ImportModal({ isOpen, onClose }: Props) {
     const handleImport = () => {
         // Insert scraper here
         if (urlToScrape) {
-            scrapeWebsite(`https://api.scraperapi.com?api_key=${process.env.NEXT_PUBLIC_SCRAPER_API_SECRET_KEY}&url=${urlToScrape}`)
+            scrapeWebsite(`https://app.scrapingbee.com/api/v1/?api_key=${process.env.NEXT_PUBLIC_SCRAPER_API_SECRET_KEY}&url=${urlToScrape}`)
         }
         else {
             setInvalidUrl(true)
