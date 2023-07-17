@@ -51,10 +51,7 @@ function useFirebaseDatabase() {
                                 [key as string]: value,
                             });
                         });
-                    } else {
-                        console.log("No data available");
                     }
-
                     resolve(deck);
                 }
             );
@@ -86,8 +83,6 @@ function useFirebaseDatabase() {
                     deleteDeck(dateAsKey);
                 });
             }
-        } else {
-            console.log('No data available');
         }
     }
 
