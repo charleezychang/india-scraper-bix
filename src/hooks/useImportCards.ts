@@ -2,7 +2,6 @@ import axios from "axios";
 import { load } from "cheerio";
 import { useState } from "react";
 import { Card } from "../interfaces";
-import dayjs from "dayjs";
 import useFirebaseAuth from "../firebase/useFirebaseAuth";
 import useFirebaseDatabase from "../firebase/useFirebaseDatabase";
 
@@ -81,7 +80,6 @@ function useImportCards() {
             answer: answers[i],
             timesCorrect: 0,
             timesWrong: 0,
-            // cooldown: dayjs()
           })))
         })
         

@@ -1,11 +1,10 @@
 'use client'
 
 import React from 'react'
-import { Card, CardHeader, CardBody, CardFooter, Text, Button, AbsoluteCenter, Box, InputGroup, InputLeftElement } from '@chakra-ui/react'
+import { Card, CardHeader, CardBody, CardFooter, Text, InputGroup, InputLeftElement } from '@chakra-ui/react'
 import LoginWithGoogle from '@/src/firebase/loginWithGoogle';
-import initFirebase from '@/src/firebase/config';
 import { Input } from '@chakra-ui/react'
-import { Stack, HStack, VStack } from '@chakra-ui/react'
+import { HStack, VStack } from '@chakra-ui/react'
 import { Divider } from '@chakra-ui/react'
 import PrimaryButton from '@/src/components/PrimaryButton';
 import Image from 'next/image';
@@ -13,7 +12,7 @@ import Person from '../../src/assets/icons/Person.svg'
 import Lock from '../../src/assets/icons/Lock.svg'
 
 function Page() {
-    
+
     return (
         <div className='tw-flex tw-items-center tw-justify-center tw-h-screen'>
             <Card className='tw-bg-[#242424] tw-w-[350px] tw-rounded-xl tw-p-4 tw-items-center'>
@@ -32,13 +31,13 @@ function Page() {
                             <InputLeftElement pointerEvents='none' p={2}>
                                 <Image src={Person} alt='person-icon' />
                             </InputLeftElement>
-                            <Input placeholder='email address' color='brand.text' focusBorderColor='brand.accent'/>
+                            <Input placeholder='email address' color='brand.text' focusBorderColor='brand.accent' />
                         </InputGroup>
                         <InputGroup>
                             <InputLeftElement pointerEvents='none' p={2}>
                                 <Image src={Lock} alt='lock-icon' />
                             </InputLeftElement>
-                            <Input type='password' placeholder='password' color='brand.text' focusBorderColor='brand.accent'/>
+                            <Input type='password' placeholder='password' color='brand.text' focusBorderColor='brand.accent' />
                         </InputGroup>
                     </VStack>
                 </CardBody>

@@ -2,10 +2,8 @@
 import initFirebase from '../src/firebase/config'
 import useFirebaseAuth from '@/src/firebase/useFirebaseAuth'
 import { Spinner } from '@chakra-ui/react'
-import Image from 'next/image';
-import background from '../src/assets/images/background.svg'
 
-export default function Home(props: any) {
+export default function Home() {
   const { user, loading, logOut } = useFirebaseAuth()
   initFirebase()
 

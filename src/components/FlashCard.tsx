@@ -1,5 +1,4 @@
-import { Button, CardBody, CardHeader, Text, Input, VStack, Divider, Tooltip, HStack, Flex, Box } from '@chakra-ui/react'
-
+import { Text, Input, VStack, Divider, Tooltip, HStack, Flex, Box } from '@chakra-ui/react'
 import React, { ChangeEvent, useEffect, useState } from 'react'
 import FlashCardOption from './FlashCardOption'
 import { Card } from '../interfaces'
@@ -38,7 +37,7 @@ function FlashCard({ card, showRandomCard }: Props) {
   useEffect(() => {
     showPercentage()
   }, [card, answerRevealed])
-  
+
 
   const showNumberRight = () => {
     if (answerRevealed && chosenAnswer == extractedCard?.answer) {
@@ -63,10 +62,10 @@ function FlashCard({ card, showRandomCard }: Props) {
       setPercentage('--')
     }
     else if (answerRevealed && chosenAnswer == extractedCard?.answer) {
-      setPercentage((((extractedCard?.timesCorrect + 1) / (extractedCard?.timesCorrect + extractedCard?.timesWrong + 1))*100).toFixed(1))
+      setPercentage((((extractedCard?.timesCorrect + 1) / (extractedCard?.timesCorrect + extractedCard?.timesWrong + 1)) * 100).toFixed(1))
     }
     else if (answerRevealed && chosenAnswer != extractedCard?.answer) {
-      setPercentage(((extractedCard?.timesCorrect ) / (extractedCard?.timesCorrect + extractedCard?.timesWrong + 1)*100).toFixed(1))
+      setPercentage(((extractedCard?.timesCorrect) / (extractedCard?.timesCorrect + extractedCard?.timesWrong + 1) * 100).toFixed(1))
     }
   }
 
@@ -188,7 +187,7 @@ function FlashCard({ card, showRandomCard }: Props) {
             {percentage}
           </Box>
         </HStack>
-        <PrimaryButton displayText="Next" onClick={handleNextCard} disabled={!answerRevealed || (!cooldown && customCooldown == '')}/>
+        <PrimaryButton displayText="Next" onClick={handleNextCard} disabled={!answerRevealed || (!cooldown && customCooldown == '')} />
       </Flex>
     </>
 

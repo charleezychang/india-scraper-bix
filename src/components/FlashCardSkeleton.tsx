@@ -1,8 +1,6 @@
-import { Button, CardBody, CardHeader, Text, Input, VStack, Divider, Tooltip, HStack, Flex, Box } from '@chakra-ui/react'
-
-import React, { ChangeEvent, useEffect, useState } from 'react'
-import { Card } from '../interfaces'
-import { Skeleton, SkeletonCircle, SkeletonText } from '@chakra-ui/react'
+import { Divider, Box } from '@chakra-ui/react'
+import React from 'react'
+import { SkeletonText } from '@chakra-ui/react'
 
 function FlashCardSkeleton() {
 

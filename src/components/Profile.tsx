@@ -1,16 +1,12 @@
-import { Box, Card, HStack, SkeletonCircle, Spinner, Text, VStack, useDisclosure } from '@chakra-ui/react'
+import { Card, SkeletonCircle } from '@chakra-ui/react'
 import React from 'react'
-import { Avatar, AvatarBadge, AvatarGroup } from '@chakra-ui/react'
+import { Avatar } from '@chakra-ui/react'
 import useFirebaseAuth from '../firebase/useFirebaseAuth'
 import {
     Menu,
     MenuButton,
     MenuList,
-    MenuItem,
-    MenuItemOption,
-    MenuGroup,
-    MenuOptionGroup,
-    MenuDivider,
+    MenuItem
 } from '@chakra-ui/react'
 import Image from 'next/image'
 import Graph from '@/src/assets/icons/Graph.svg'
@@ -18,28 +14,17 @@ import Add from '@/src/assets/icons/Add.svg'
 import Import from '@/src/assets/icons/Import.svg'
 import Logout from '@/src/assets/icons/Logout.svg'
 import { useRouter } from "next/navigation";
-import ImportModal from './ImportModal'
 
 interface Props {
-    fetchData: () => void
+    handleImportModalOpen: () => void
 }
 
-function Profile({ fetchData }: Props) {
+function Profile({ handleImportModalOpen }: Props) {
     const { user, loading, logOut } = useFirebaseAuth()
     const router = useRouter();
-    const { isOpen, onOpen, onClose } = useDisclosure()
 
     const handleStatisticsClick = () => {
         router.push("/statistics");
-    }
-
-    const handleImportModalOpen = () => {
-        onOpen()
-    }
-
-    const handleImportModalClose = () => {
-        fetchData()
-        onClose()
     }
 
     return (
@@ -47,7 +32,7 @@ function Profile({ fetchData }: Props) {
             {loading && <SkeletonCircle size='12' />}
             {!loading &&
                 <Menu>
-                    <ImportModal isOpen={isOpen} onClose={handleImportModalClose} />
+                    {/* <ImportModal isOpen={isOpen} onClose={handleImportModalClose} /> */}
                     <MenuButton>
                         <Avatar src={user?.photoURL} name={user?.displayName} />
                     </MenuButton>

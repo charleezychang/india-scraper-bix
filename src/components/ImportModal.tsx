@@ -1,4 +1,4 @@
-import { Button, Input, Modal, ModalBody, ModalCloseButton, ModalContent, ModalFooter, ModalHeader, ModalOverlay, useDisclosure } from '@chakra-ui/react'
+import { Input, Modal, ModalBody, ModalCloseButton, ModalContent, ModalFooter, ModalHeader, ModalOverlay } from '@chakra-ui/react'
 import Import1 from '@/src/assets/images/Import1.png'
 import Import2 from '@/src/assets/images/Import2.png'
 import Image from 'next/image';
@@ -9,7 +9,6 @@ import { ChangeEvent, useEffect, useState } from 'react';
 
 interface Props {
     isOpen: boolean;
-    // onOpen: () => void;
     onClose: () => void;
 }
 

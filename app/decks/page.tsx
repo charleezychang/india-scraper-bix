@@ -3,9 +3,8 @@
 import {
   Card,
   CardBody,
-  Spinner,
-  Text,
-  VStack
+  VStack,
+  useDisclosure
 } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
 import Profile from "@/src/components/Profile";
@@ -15,6 +14,8 @@ import dayjs from "dayjs";
 import { Card as CardType } from "@/src/interfaces";
 import useFirebaseAuth from "@/src/firebase/useFirebaseAuth";
 import FlashCardSkeleton from "@/src/components/FlashCardSkeleton";
+import NoCards from "@/src/components/NoCards";
+import ImportModal from "@/src/components/ImportModal";
 
 function Page() {
   const { user } = useFirebaseAuth();
@@ -23,6 +24,7 @@ function Page() {
   const [cardShown, setCardShown] = useState<CardType>()
   const [isInitializing, setIsInitializing] = useState<boolean>(false)
   const [shownInitialCard, setShowInitialCard] = useState<boolean>(false)
+  const { isOpen, onOpen, onClose } = useDisclosure()
 
   useEffect(() => {
     fetchData()
@@ -49,11 +51,6 @@ function Page() {
     }
   }, [deck]);
 
-  useEffect(() => {
-    console.log('deckd');
-    console.log(deck)
-  }, [deck])
-
   const showRandomCard = () => {
     if (deck.length == 0) {
       return
@@ -63,24 +60,33 @@ function Page() {
     const updatedDeck = [...deck];
     updatedDeck.splice(index, 1);
 
-    // Update the deck state with the updated array
     setDeck(updatedDeck);
     setCardShown(item)
   };
 
+  const handleImportModalOpen = () => {
+    onOpen()
+  }
+
+  const handleImportModalClose = () => {
+    onClose()
+    fetchData()
+  }
 
   return (
     <div className="tw-flex tw-items-center tw-justify-center tw-h-screen">
       <VStack>
+        <ImportModal isOpen={isOpen} onClose={handleImportModalClose} />
+
         <div className="tw-self-start">
-          <Profile fetchData={fetchData}/>
+          <Profile handleImportModalOpen={handleImportModalOpen} />
         </div>
         <Card className="tw-bg-[#242424] tw-w-[350px] tw-min-h-[442px] tw-rounded-b-xl tw-rounded-tr-xl tw-p-4 tw-items-center tw--translate-y-8">
           {
             isInitializing ?
               <FlashCardSkeleton /> :
               <CardBody>
-                {cardShown && !isInitializing ? <FlashCard card={cardShown} showRandomCard={showRandomCard} /> : <Text>asd</Text>}
+                {cardShown && !isInitializing ? <FlashCard card={cardShown} showRandomCard={showRandomCard} /> : <NoCards handleImportModalOpen={handleImportModalOpen} />}
               </CardBody>
           }
         </Card>
