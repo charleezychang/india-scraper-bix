@@ -1,10 +1,9 @@
-'use client';
 import initFirebase from '../src/firebase/config'
 import useFirebaseAuth from '@/src/firebase/useFirebaseAuth'
 import { Spinner } from '@chakra-ui/react'
 
 export default function Home() {
-  const { user, loading, logOut } = useFirebaseAuth()
+  const { loading } = useFirebaseAuth()
   initFirebase()
 
   return (
