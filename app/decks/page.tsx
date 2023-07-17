@@ -31,8 +31,8 @@ function Page() {
   }, [user]);
 
   const fetchData = async () => {
+    setIsInitializing(true)
     try {
-      setIsInitializing(true)
       await initializeDeck();
       const res = await readDeck(dayjs());
       setDeck(res as CardType[]);
