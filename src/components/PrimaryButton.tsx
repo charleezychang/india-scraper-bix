@@ -16,7 +16,7 @@ function PrimaryButton({ displayText, onClick, width, isLoading, disabled }: Pro
 
     return (
         <Box
-            as={disabled ? 'button' : undefined}
+            as='button'
             display='flex'
             disabled={disabled}
             flexDirection='row'

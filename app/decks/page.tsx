@@ -36,7 +36,9 @@ function Page() {
       await initializeDeck();
       const res = await readDeck(dayjs());
       setDeck(res as CardType[]);
-      setIsInitializing(false)
+      setTimeout(()=> {
+        setIsInitializing(false)
+      }, 2000)
 
     } catch (error) {
       setIsInitializing(false)
@@ -53,6 +55,8 @@ function Page() {
 
   const showRandomCard = () => {
     if (deck.length == 0) {
+      setCardShown(undefined)
+      setShowInitialCard(false)
       return
     }
     const index = Math.floor(Math.random() * deck.length);

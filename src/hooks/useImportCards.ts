@@ -1,14 +1,10 @@
 import axios from "axios";
 import { load } from "cheerio";
 import { useState } from "react";
-import { Card } from "../interfaces";
-import useFirebaseAuth from "../firebase/useFirebaseAuth";
 import useFirebaseDatabase from "../firebase/useFirebaseDatabase";
 
 function useImportCards() {
-  const [deck, setDeck] = useState<Card[] | null>(null)
-  const { user } = useFirebaseAuth()
-  const { addCard, readDeck, initializeDeck, isLoading } = useFirebaseDatabase()
+  const { addCard } = useFirebaseDatabase()
   const [isImporting, setIsImporting] = useState<boolean>(false)
 
 
@@ -32,7 +28,6 @@ function useImportCards() {
   }
 
   async function scrapeWebsite(url: string) {
-    console.log(url)
     setIsImporting(true)
     // Parse the page for looping
     let indexLastForwardSlash = url.lastIndexOf('/')
