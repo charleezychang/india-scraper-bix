@@ -38,7 +38,6 @@ function FlashCard({ card, showRandomCard }: Props) {
     showPercentage()
   }, [card, answerRevealed])
 
-
   const showNumberRight = () => {
     if (answerRevealed && chosenAnswer == extractedCard?.answer) {
       return extractedCard?.timesCorrect + 1
