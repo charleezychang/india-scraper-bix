@@ -1,5 +1,3 @@
-'use client'
-
 import './globals.css'
 import { Providers } from "./providers";
 import Image from 'next/image';
